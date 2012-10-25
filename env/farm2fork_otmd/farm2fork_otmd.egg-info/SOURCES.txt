@@ -24,4 +24,15 @@ farm2fork_otmd/static/pylons.css
 farm2fork_otmd/static/pyramid-small.png
 farm2fork_otmd/static/pyramid.png
 farm2fork_otmd/static/transparent.gif
-farm2fork_otmd/templates/mytemplate.pt
+farm2fork_otmd/static/css/bootstrap-responsive.css
+farm2fork_otmd/static/css/bootstrap-responsive.min.css
+farm2fork_otmd/static/css/bootstrap.css
+farm2fork_otmd/static/css/bootstrap.min.css
+farm2fork_otmd/static/css/style.css
+farm2fork_otmd/static/img/glyphicons-halflings-white.png
+farm2fork_otmd/static/img/glyphicons-halflings.png
+farm2fork_otmd/static/js/bootstrap.js
+farm2fork_otmd/static/js/bootstrap.min.js
+farm2fork_otmd/templates/base.mako
+farm2fork_otmd/templates/home.mako
+farm2fork_otmd/templates/other.mako

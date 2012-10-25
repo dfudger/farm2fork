@@ -1,0 +1,25 @@
+
+#header {
+    background-color: #dddddd;
+    margin-bottom: 8px;
+}
+
+#header_text {
+    text-align: center;
+}
+
+.navbar-inner{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.navbar{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 9px;
+    font-color: #dddddd;
+}
+

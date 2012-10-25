@@ -9,8 +9,14 @@ class ViewTests(unittest.TestCase):
     def tearDown(self):
         testing.tearDown()
 
-    def test_my_view(self):
-        from .views import my_view
+    def test_get_home_page(self):
+        from .views import get_home_page
         request = testing.DummyRequest()
-        info = my_view(request)
-        self.assertEqual(info['project'], 'farm2fork_otmd')
+        info = get_home_page(request)
+        self.assertEqual(info["title"], "Home")
+
+    def test_get_other_page(self):
+        from .views import get_other_page
+        request = testing.DummyRequest()
+        info = get_other_page(request)
+        self.assertEqual(info["title"], "Other")
