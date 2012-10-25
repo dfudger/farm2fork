@@ -1,0 +1,4 @@
+
+    [paste.server_runner]
+    main = waitress:serve_paste
+    

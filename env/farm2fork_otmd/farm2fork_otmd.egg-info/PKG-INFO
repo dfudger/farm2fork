@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: farm2fork-otmd
+Version: 0.0
+Summary: farm2fork_otmd
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: farm2fork_otmd README
+        
+        
+        0.0
+        ---
+        
+        -  Initial version
+        
+Keywords: web pyramid pylons
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
