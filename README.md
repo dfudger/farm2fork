@@ -18,6 +18,7 @@ What do you think?
 First get a clone of the repo (repository)
 
     $  git clone git@github.com:hockeybuggy/farm2fork.git
+    $  cd farm2fork
 
 To work on the project go into the virtual env 'env/farm2fork_otmd'
 
@@ -26,12 +27,19 @@ To work on the project go into the virtual env 'env/farm2fork_otmd'
 From there you can run the tests
 
     $  ../bin/python setup.py test
+    >  ...
+    >  ----------------------------------------------------------------------
+    >  Ran 2 tests in 0.006s
+    >  
+    >  OK
 
 Or run a local server
 
-    $ ../bin/pserve development.ini
+    $  ../bin/pserve development.ini
+    >  Starting server in PID 3479.
+    >  serving on http://0.0.0.0:6543
 
 You will find the majority of the project files in the subdirectory also called farm2fork_otmd
 
-    $ cd farm2fork_otmd
-    $ *vim* tests.py
+    $  cd farm2fork_otmd
+    $  vim tests.py
