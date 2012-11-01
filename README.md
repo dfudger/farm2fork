@@ -28,7 +28,11 @@ computer's python installation
 from within your virtual environment.
 
     $  git clone git@github.com:hockeybuggy/farm2fork.git
+
+#### Install up the pyramid project for development
+
     $  cd farm2fork
+    $  ../bin/setup.py develop
 
 #### Run the projects tests to make sure it's all ok
 
