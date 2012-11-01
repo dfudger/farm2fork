@@ -3,6 +3,9 @@
 
 A git repository for team 3 in the course cis3750
 
+Everyone has their own fork. There is nothing preventing you from messing with
+someone branch but don't do it. It's mean.
+
 ----
 
 ## Development
