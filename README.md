@@ -1,11 +1,11 @@
-##farm2fork
+# farm2fork
 =========
 
 A git repository for team 3 in the course cis3750
 
 ----
 
-###Development
+## Development
 Follow this quick guide to get the project setup on your computer so you can start development.
 
 I don't know If this will work for macs but if not let me know if it does not and we can tweak it. 
