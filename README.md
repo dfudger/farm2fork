@@ -52,8 +52,12 @@ from within the farm2form repo.
     >  Starting server in PID 3479.
     >  serving on http://0.0.0.0:6543
 
-That should be about it. You will find the majority of the project files that we will be working on is
-in the subdirectory also called farm2fork_otmd.
+That should be about it. You will find the majority of the project files that
+we will be working on is in the subdirectory also called farm2fork_otmd.
+
+When I am working on this I have one terminal that I use for running the server
+and one that I use for running tests and the like. But do whatever works for
+you.
 
 ## Resources
 
