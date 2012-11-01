@@ -51,6 +51,3 @@ from within the farm2form repo.
 That should be about it. You will find the majority of the project files that we will be working on is
 in the subdirectory also called farm2fork_otmd.
 
-General
-
-
