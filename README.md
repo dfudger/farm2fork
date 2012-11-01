@@ -1,32 +1,40 @@
-Hello, this is Matthew!
-
 ##farm2fork
 =========
 
 A git repository for team 3 in the course cis3750
 
 ----
-### Virtual Environment
 
-So I added a virtual environment to the repository and put the code in there.
-
-I don't know if that was the right choice or we should have our own environments.
-
-What do you think?
-
-----
 ###Development
-First get a clone of the repo (repository)
+Follow this quick guide to get the project setup on your computer so you can start development.
+
+I don't know If this will work for macs but if not let me know if it does not and we can tweak it. 
+
+1. Set up a virtual environment
+
+You will want to have a virtual environment so that you don't screw up your
+computer's python installation
+
+    $  sudo easy_install virtualenv
+    $  virtualenv --no-site-packages f2fenv
+
+2. Install pyramid in the environment
+
+    $  cd f2fenv
+    $  bin/easy_install pyramid
+
+3. Clone the repo (repository) into your virtual env 
+
+from within your virtual environment.
 
     $  git clone git@github.com:hockeybuggy/farm2fork.git
     $  cd farm2fork
 
-To work on the project go into the virtual env 'env/farm2fork_otmd'
+4. Run the projects tests to make sure it's all ok
 
-    $ cd env/farm2fork_otmd
+from within the farm2form repo.
 
-From there you can run the tests
-
+    $  cd farm2fork_otmd
     $  ../bin/python setup.py test
     >  ...
     >  ----------------------------------------------------------------------
@@ -34,13 +42,12 @@ From there you can run the tests
     >  
     >  OK
 
-Or run a local server
+5. Run the server locally
 
     $  ../bin/pserve development.ini
     >  Starting server in PID 3479.
     >  serving on http://0.0.0.0:6543
 
-You will find the majority of the project files in the subdirectory also called farm2fork_otmd
+You will find the majority of the project files that we will be working on is
+in the subdirectory also called farm2fork_otmd.
 
-    $  cd farm2fork_otmd
-    $  vim tests.py
