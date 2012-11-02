@@ -40,7 +40,7 @@
             <div class="row-fluid">
                 <hr/>
                 <footer class="span12">
-                    <div class="footer">On The Mark Designs - 2012</div>
+                    <div class="footer">On The Mark Design - 2012</div>
                 </footer>
             </div>
         </div>
