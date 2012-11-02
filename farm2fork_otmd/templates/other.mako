@@ -4,7 +4,7 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title}</h2>
+    <h2 id="header_title">${title} <small>test</small></h2>
 </%block>
 
 <%block name="navbar">
