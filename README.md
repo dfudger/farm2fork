@@ -35,7 +35,7 @@ from within your virtual environment.
 #### Install up the pyramid project for development
 
     $  cd farm2fork
-    $  ../bin/setup.py develop
+    $  ../bin/python setup.py develop
 
 #### Run the projects tests to make sure it's all ok
 
