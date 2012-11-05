@@ -69,3 +69,6 @@ Here are some places where some very useful information can be found:
 http://docs.pylonsproject.org/projects/pyramid/en/1.4-branch/narr/install.html#installing-the-virtualenv-package
 
 http://docs.makotemplates.org/en/latest/syntax.html
+
+http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem
+
