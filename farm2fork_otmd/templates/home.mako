@@ -9,7 +9,7 @@
 <%block name="navbar">
     <ul class="nav">
         <li class="active"><a href="/">home</a></li>
-        <li><a href="/other">other</a></li>
+        <li><a href="/profile/douglas">douglas' profile</a></li>
     </ul>
 </%block>
 
