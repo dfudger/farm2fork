@@ -8,3 +8,7 @@ def get_home_page(request):
 def get_profile_page(request):
     usernameStr = request.matchdict.get("username")
     return {"title":"Profile", "username":usernameStr}
+
+@view_config(route_name="construction", renderer="construction.mako")
+def get_construction_page(request):
+    return {"title":"Construction"}
