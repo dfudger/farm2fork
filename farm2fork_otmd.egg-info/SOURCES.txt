@@ -1,6 +1,7 @@
 CHANGES.txt
 MANIFEST.in
 development.ini
+dont_be_a_dick.txt
 production.ini
 setup.cfg
 setup.py
