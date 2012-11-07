@@ -12,3 +12,7 @@ def get_profile_page(request):
 @view_config(route_name="construction", renderer="construction.mako")
 def get_construction_page(request):
     return {"title":"Construction"}
+
+@view_config(route_name="signup", renderer="signup.mako")
+def get_signup_page(request):
+    return {"title":"Signup"}

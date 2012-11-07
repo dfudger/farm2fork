@@ -26,3 +26,10 @@ class ViewTests(unittest.TestCase):
         request = testing.DummyRequest()
         info = get_construction_page(request)
         self.assertEqual(info["title"], "Construction")
+
+    def test_get_signup_page(self):
+        from .views import get_signup_page
+        request = testing.DummyRequest()
+        info = get_signup_page(request)
+        self.assertEqual(info["title"], "Signup")
+

@@ -36,3 +36,4 @@ farm2fork_otmd/templates/base.mako
 farm2fork_otmd/templates/construction.mako
 farm2fork_otmd/templates/home.mako
 farm2fork_otmd/templates/profile.mako
+farm2fork_otmd/templates/signup.mako
