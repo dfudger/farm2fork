@@ -21,12 +21,5 @@
         </p>
     </div>
 
-    <div class="span4">
-        <h3>Under Construction!</h3>
-        <p>
-            Ipsum lorem, lollygagging about in the roudabout way.
-        </p>
-    </div>
-
 </div> <!-- End Row -->
 
