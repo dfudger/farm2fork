@@ -16,7 +16,7 @@
 
 <div class="row-fluid">
     
-    <div id="myCarousel" class="carousel slide" class="span">
+    <div id="myCarousel" class="carousel slide" class="span12">
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="active item">
