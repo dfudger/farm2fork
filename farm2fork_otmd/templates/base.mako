@@ -28,7 +28,7 @@
                                     <li><a href="/foodbanks">list of food providers</a></li>
                                 </ul>
                                 <ul class="nav pull-right">
-                                     <li><a rel="popover" data-placement="bottom" data-content="Hi" data-original-title="Login" data-html="true" href="#">login</a></li>
+                                    <li><a href="#loginModal" role="button" data-toggle="modal">login</a></li>
                                 </ul>
                             </%block>
                         </div>

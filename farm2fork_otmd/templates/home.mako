@@ -6,6 +6,14 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
+<%block name="navbar">
+    <ul class="nav">
+        <li class="active"><a href="/">home</a></li>
+        <li><a href="/profile/douglas">douglas' profile</a></li>
+        <li><a href="#loginModal" role="button" data-toggle="modal">login</a></li>
+    </ul>
+</%block>
+
 <div class="row-fluid">
     <div class="span4">
         <h3>Welcome!</h3>
@@ -57,5 +65,16 @@
             dictum tellus. Fusce feugiat tortor vel diam mattis congue rutrum ac mauris.
             Donec nec est erat, id faucibus odio. Etiam ut. 
         </p> 
+    </div>
+
+</div> <!-- End Row -->
+
+<div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+    </div>
+    <div class="modal-body">
+        <%include file="login.mako"/>
     </div>
 </div>
