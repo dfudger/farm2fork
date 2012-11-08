@@ -13,8 +13,34 @@
     </ul>
 </%block>
 
+
 <div class="row-fluid">
-    <div class="span4">
+    
+    <div id="myCarousel" class="carousel slide" class="span">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+            <img src="http://farm4.staticflickr.com/3214/2661516211_26d6009b51.jpg" height="50" width="500" alt="Test Image One"/>
+        </div>
+        <div class="item">
+            <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
+        </div>
+        <div class="item">
+            <img src="http://farm4.staticflickr.com/3034/2693444181_1f3ca8ab2e_b.jpg" height="100" width="500" alt="Test Image Three"/>
+        </div>
+        <div class="item">
+            <img src="http://farm7.staticflickr.com/6092/6277351449_ef58f0e709_b.jpg" height="100" width="500" alt="Test Image Four"/>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+</div> <!-- End Row 1-->
+
+<div class="row-fluid">
+    <!--<div class="span">
         <h3>Welcome!</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut porttitor
@@ -33,8 +59,8 @@
             non ligula nec dui sagittis tristique. Aenean eu tellus ac velit auctor egestas
             et vitae metus. 
         </p>
-    </div>
-    <div class="span4">
+    </div>-->
+    <div class="span6 offset5">
         <h3>What is farm2fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -48,23 +74,4 @@
             sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
         </p>
     </div>
-    <div class="span4">
-        <h3>Why is On The Mark Designs the unstoppable juggernaut it is?</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
-            imperdiet felis id pellentesque. Sed a neque ante, lobortis venenatis tortor.
-            Nunc non tristique ligula. In convallis pellentesque ornare. Praesent bibendum
-            facilisis sapien, non suscipit turpis blandit vitae. Donec tristique arcu
-            egestas sem ornare consequat. Duis non nisl quis eros imperdiet vehicula vel et
-            tortor. Morbi leo magna, porttitor nec eleifend a, hendrerit eget mauris. Nunc
-            id ornare enim. Nunc vel nunc quis ligula sagittis sollicitudin.
-
-            Nam sit amet erat in tellus hendrerit convallis eu eget risus. Donec at ligula
-            in dui tempus pulvinar. Quisque ac augue odio. Mauris a lacus sapien, tempor
-            dictum tellus. Fusce feugiat tortor vel diam mattis congue rutrum ac mauris.
-            Donec nec est erat, id faucibus odio. Etiam ut. 
-        </p> 
-    </div>
-
-</div> <!-- End Row -->
-
+</div> <!-- End Row 2 -->
