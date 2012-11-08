@@ -3,7 +3,7 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title} <small>test</small></h2>
+    <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
 <%block name="navbar">
@@ -20,13 +20,10 @@
             This page is under construction. Someday this page will have things on it. That day is not today.
         </p>
     </div>
-
     <div class="span4">
         <h3>Under Construction!</h3>
         <p>
             Ipsum lorem, lollygagging about in the roudabout way.
         </p>
     </div>
-
-</div> <!-- End Row -->
-
+</div>
