@@ -48,24 +48,6 @@
             sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
         </p>
     </div>
-    <div class="span4">
-        <h3>Why is On The Mark Designs the unstoppable juggernaut it is?</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
-            imperdiet felis id pellentesque. Sed a neque ante, lobortis venenatis tortor.
-            Nunc non tristique ligula. In convallis pellentesque ornare. Praesent bibendum
-            facilisis sapien, non suscipit turpis blandit vitae. Donec tristique arcu
-            egestas sem ornare consequat. Duis non nisl quis eros imperdiet vehicula vel et
-            tortor. Morbi leo magna, porttitor nec eleifend a, hendrerit eget mauris. Nunc
-            id ornare enim. Nunc vel nunc quis ligula sagittis sollicitudin.
-
-            Nam sit amet erat in tellus hendrerit convallis eu eget risus. Donec at ligula
-            in dui tempus pulvinar. Quisque ac augue odio. Mauris a lacus sapien, tempor
-            dictum tellus. Fusce feugiat tortor vel diam mattis congue rutrum ac mauris.
-            Donec nec est erat, id faucibus odio. Etiam ut. 
-        </p> 
-    </div>
-
 </div> <!-- End Row -->
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
