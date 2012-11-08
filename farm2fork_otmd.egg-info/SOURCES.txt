@@ -35,5 +35,7 @@ farm2fork_otmd/static/js/bootstrap.min.js
 farm2fork_otmd/templates/base.mako
 farm2fork_otmd/templates/construction.mako
 farm2fork_otmd/templates/home.mako
+farm2fork_otmd/templates/login.mako
+farm2fork_otmd/templates/loginPage.mako
 farm2fork_otmd/templates/profile.mako
 farm2fork_otmd/templates/signup.mako
