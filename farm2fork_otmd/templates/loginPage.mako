@@ -7,5 +7,8 @@
     <h2 id="header_title">${title} <small>test</small></h2>
 </%block>
 
-<%include file="login.mako"/>
-
+<div class="row-fluid">
+    <div class="span12">
+        <%include file="login.mako"/>
+    </div>
+</div>
