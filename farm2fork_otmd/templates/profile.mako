@@ -4,12 +4,11 @@
 <%block name="page_title">farm2fork - ${title} of ${username}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title} <small>${username}</small></h2>
+    <h1 id="header_title">${title} <small>${username}</small></h1>
 </%block>
 
 <%block name="navbar">
     <ul class="nav">
-        <li><a href="/">home</a></li>
         <li class="active"><a href="/profile/douglas">douglas' profile</a></li>
     </ul>
 </%block>

@@ -1,0 +1,76 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+University of Guelph - School of Computer Science
+CIS*3750 Systems Analysis and Design Class of Fall 2012
+
+Team 3 - UI - On The Mark Design
+
+  Team Lead:  Danielle Fudger
+  Site:       dfudger.com
+  Twitter:    @dfudger
+  Location:   Guelph, Ontario
+
+  Developer:  Douglas Anderson
+  Site:       hockeybuggy.com
+  Twitter:    @hockeybuggy
+  Location:   Guelph, Ontario
+
+  Developer:  Matthew Cibulka
+  Location:   Guelph, Ontario
+
+  Developer:  Matthew Kapteyn
+  Location:   Guelph, Ontario
+
+  Designer:   Matthew Roberts
+  Site:       mroberts.me
+  Twitter:    @eruraindil
+  Location:   Guelph, Ontario
+
+
+/* THANKS */
+  Names (& URL):
+    Dr. Daniel Gillis, Professor 
+        (consumedbywanderlust.wordpress.com)
+        (danielgillis.wordpress.com)
+    CIS*3750 Class of Fall 2012
+    Danny Williamson, Letter M Marketing
+        (www.thelettermmarketing.com)
+    Guelph Food Bank
+        (www.spiritwind-christian-centre.ca/guelphfoodbank.html)
+    Guelph-Wellington Food Round Table
+        (gwfrt.com)
+
+
+/* SITE */
+  Standards: HTML5, CSS3, 
+  Components: Bootstrap, jQuery, Pyramids, Mako, 
+  Software: Python
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
