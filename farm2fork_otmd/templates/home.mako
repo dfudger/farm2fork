@@ -10,7 +10,7 @@
 
 <div class="row-fluid">
     
-    <div id="myCarousel" class="carousel slide" class="span8 offset2" class=".visible-desktop">
+    <div id="myCarousel" class="carousel slide span8 offset2 hidden-phone">
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="active item">
