@@ -141,8 +141,7 @@
         </p>
     </div>
     <div class="modal-footer">
-        <!-- This currently does not work. The function checkTos must be created -->
-        <!-- <button class="btn btn-primary" onclick="checkTos()">I Agree</button> -->
+        <button class="btn btn-primary" onclick="$('#tosCheckbox').prop('checked', true);$('#tosModal').modal('hide')">I Agree</button>
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     </div>
 </div>

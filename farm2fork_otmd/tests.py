@@ -32,6 +32,7 @@ class ViewTests(unittest.TestCase):
         request = testing.DummyRequest()
         info = get_signup_page(request)
         self.assertEqual(info["title"], "Signup")
+        self.assertTrue(info["valid_password"])
 
     def test_get_login_page(self):
         from .views import get_login_page
