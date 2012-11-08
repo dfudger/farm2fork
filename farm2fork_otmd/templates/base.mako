@@ -55,6 +55,7 @@
             
             <div id="body" class="contents">
                 ${self.body()}
+                <div style="clear:both;"></div>
             </div>
 
             <div class="row-fluid" id="footer">
