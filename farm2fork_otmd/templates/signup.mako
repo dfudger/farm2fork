@@ -14,40 +14,40 @@
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Enter your Given Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label">Surname</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Enter your Surname">
                 </div>
             </div>
 
             <div class="control-group">
                 <label class="control-label">Email</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Enter your Email">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label">Confirm Email</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Repeat your Email">
                 </div>
             </div>
 
             <div class="control-group">
                 <label class="control-label">Password</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Enter a Password">
                 </div>
             </div>
 
             <div class="control-group">
                 <label class="control-label">Confirm Password</label>
                 <div class="controls">
-                    <input type="text">
+                    <input type="text" placeholder="Repeat the same Password">
                 </div>
             </div>
 
