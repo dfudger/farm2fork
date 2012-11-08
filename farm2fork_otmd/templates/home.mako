@@ -3,14 +3,7 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title} <small>test</small></h2>
-</%block>
-
-<%block name="navbar">
-    <ul class="nav">
-        <li class="active"><a href="/">home</a></li>
-        <li><a href="/other">other</a></li>
-    </ul>
+    <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
 <div class="row-fluid">
@@ -65,6 +58,4 @@
             Donec nec est erat, id faucibus odio. Etiam ut. 
         </p> 
     </div>
-
-</div> <!-- End Row -->
-
+</div>

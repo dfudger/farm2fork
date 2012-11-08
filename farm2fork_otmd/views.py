@@ -4,6 +4,11 @@ from pyramid.view import view_config
 def get_home_page(request):
     return {"title":"Home"}
 
-@view_config(route_name="other", renderer="other.mako")
-def get_other_page(request):
-    return {"title":"Other"}
+@view_config(route_name="profile", renderer="profile.mako")
+def get_profile_page(request):
+    usernameStr = request.matchdict.get("username")
+    return {"title":"Profile", "username":usernameStr}
+
+@view_config(route_name="construction", renderer="construction.mako")
+def get_construction_page(request):
+    return {"title":"Construction"}

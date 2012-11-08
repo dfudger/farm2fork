@@ -35,7 +35,7 @@ from within your virtual environment.
 #### Install up the pyramid project for development
 
     $  cd farm2fork
-    $  ../bin/setup.py develop
+    $  ../bin/python setup.py develop
 
 #### Run the projects tests to make sure it's all ok
 
@@ -69,3 +69,6 @@ Here are some places where some very useful information can be found:
 http://docs.pylonsproject.org/projects/pyramid/en/1.4-branch/narr/install.html#installing-the-virtualenv-package
 
 http://docs.makotemplates.org/en/latest/syntax.html
+
+http://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem
+
