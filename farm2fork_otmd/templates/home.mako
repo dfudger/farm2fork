@@ -6,13 +6,6 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-<%block name="navbar">
-    <ul class="nav">
-        <li class="active"><a href="/">home</a></li>
-        <li><a href="/profile/douglas">douglas' profile</a></li>
-        <li><a href="#loginModal" role="button" data-toggle="modal">login</a></li>
-    </ul>
-</%block>
 
 <div class="row-fluid">
     <div class="span4">
