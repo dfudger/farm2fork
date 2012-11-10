@@ -31,7 +31,8 @@
                                     <li>
                                         ## TODO send mobile to page
                                         ## TODO if loged in don't show login
-                                        <a href="#loginModal" role="button" data-toggle="modal">login</a>
+                                        <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
+                                        <a href="/login" class="visible-phone" role="button" data-toggle="modal">login</a>
                                     </li>
                                 </ul>
                             </%block>
