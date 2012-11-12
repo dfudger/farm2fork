@@ -7,14 +7,14 @@
 </%block>
 
 
-
-<div class="row-fluid">
+<!-- Carousel -->
+<div class="row-fluid"> 
     
-    <div id="myCarousel" class="carousel slide span8 offset2 hidden-phone">
+    <div id="myCarousel" class="carousel slide span12 hidden-phone">
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="active item">
-            <img src="http://farm4.staticflickr.com/3214/2661516211_26d6009b51.jpg" height="50" width="500" alt="Test Image One"/>
+            <img src="/static/img/sample1_1200x480.png" alt="Test Image One"/>
         </div>
         <div class="item">
             <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
@@ -33,8 +33,10 @@
 
 </div> <!-- End Row 1-->
 
+<!-- About F2F Section -->
 <div class="row-fluid">
-    <div class="span6 offset5">
+    <div class="span1"></div>
+    <div class="span6 offset4">
         <h3>What is farm2fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -46,6 +48,16 @@
             arcu. Aliquam ac sem libero, at ultrices lorem. Phasellus non metus at tortor
             facilisis vehicula eget sit amet velit. Vestibulum euismod porttitor nisl, non
             sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
+        </p>
+    </div>
+</div> <!-- End Row -->
+
+<!-- Buttons -->
+<div class="row-fluid">
+    <div class="span4 offset4 ">
+        <p>
+            <button class="btn btn-large btn-primary" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Large button</button>
         </p>
     </div>
 </div> <!-- End Row -->
