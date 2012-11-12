@@ -51,6 +51,7 @@
         </p>
     </div>
 </div> <!-- End Row -->
+<<<<<<< HEAD
 
 <!-- Buttons -->
 <div class="row-fluid">
@@ -71,3 +72,5 @@
         <%include file="login.mako"/>
     </div>
 </div>
+=======
+>>>>>>> f08c4ab43cd9a564614ce5e98cd61fdd09e63a9f
