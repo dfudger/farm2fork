@@ -52,6 +52,7 @@
     </div>
 </div> <!-- End Row -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!-- Buttons -->
 <div class="row-fluid">
@@ -74,3 +75,6 @@
 </div>
 =======
 >>>>>>> f08c4ab43cd9a564614ce5e98cd61fdd09e63a9f
+=======
+
+>>>>>>> 64424c092e4fb68231534464c48816283b2f120c
