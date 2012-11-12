@@ -9,7 +9,7 @@
 
 <div class="row-fluid">
     <div class="span6">
-        <h3>About is farm2fork</h3>
+        <h3>About farm2fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
