@@ -3,38 +3,40 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title} <small>test</small></h2>
+    <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-<%block name="navbar">
-    <ul class="nav">
-        <li class="active"><a href="/">home</a></li>
-        <li><a href="/profile/douglas">douglas' profile</a></li>
-    </ul>
-</%block>
 
-<div class="row-fluid">
-    <div class="span4">
-        <h3>Welcome!</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut porttitor
-            lectus. Mauris in mi ac turpis rhoncus condimentum at at turpis. Phasellus
-            turpis est, sollicitudin vitae scelerisque a, commodo facilisis risus. Quisque
-            porttitor volutpat arcu quis tempus. Vivamus non eros tortor, ornare aliquet
-            diam. Sed at augue ligula, in feugiat dui. Sed sit amet nibh eu augue porttitor
-            ultricies. Proin sodales vestibulum turpis at volutpat. Quisque odio quam,
-            ultricies sit amet egestas vitae, aliquet sed eros. Morbi ultrices justo in
-            elit adipiscing congue. Donec nec rutrum lectus.
-
-            Nunc id mauris purus. Sed sed dui urna. Sed eros risus, posuere vitae rhoncus
-            ac, convallis et felis. Aenean odio velit, adipiscing eu vehicula vel,
-            malesuada eu nisi. Vivamus mattis ornare tellus quis venenatis. Maecenas vel
-            lectus id augue bibendum eleifend. Curabitur pulvinar pulvinar tempor. Nulla
-            non ligula nec dui sagittis tristique. Aenean eu tellus ac velit auctor egestas
-            et vitae metus. 
-        </p>
+<!-- Carousel -->
+<div class="row-fluid"> 
+    
+    <div id="myCarousel" class="carousel slide span12 hidden-phone">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+            <img src="/static/img/sample1_1200x480.png" alt="Test Image One"/>
+        </div>
+        <div class="item">
+            <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
+        </div>
+        <div class="item">
+            <img src="http://farm4.staticflickr.com/3034/2693444181_1f3ca8ab2e_b.jpg" height="100" width="500" alt="Test Image Three"/>
+        </div>
+        <div class="item">
+            <img src="http://farm7.staticflickr.com/6092/6277351449_ef58f0e709_b.jpg" height="100" width="500" alt="Test Image Four"/>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-    <div class="span4">
+
+</div> <!-- End Row 1-->
+
+<!-- About F2F Section -->
+<div class="row-fluid">
+    <div class="span1"></div>
+    <div class="span6 offset4">
         <h3>What is farm2fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -48,23 +50,25 @@
             sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
         </p>
     </div>
-    <div class="span4">
-        <h3>Why is On The Mark Designs the unstoppable juggernaut it is?</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
-            imperdiet felis id pellentesque. Sed a neque ante, lobortis venenatis tortor.
-            Nunc non tristique ligula. In convallis pellentesque ornare. Praesent bibendum
-            facilisis sapien, non suscipit turpis blandit vitae. Donec tristique arcu
-            egestas sem ornare consequat. Duis non nisl quis eros imperdiet vehicula vel et
-            tortor. Morbi leo magna, porttitor nec eleifend a, hendrerit eget mauris. Nunc
-            id ornare enim. Nunc vel nunc quis ligula sagittis sollicitudin.
-
-            Nam sit amet erat in tellus hendrerit convallis eu eget risus. Donec at ligula
-            in dui tempus pulvinar. Quisque ac augue odio. Mauris a lacus sapien, tempor
-            dictum tellus. Fusce feugiat tortor vel diam mattis congue rutrum ac mauris.
-            Donec nec est erat, id faucibus odio. Etiam ut. 
-        </p> 
-    </div>
-
 </div> <!-- End Row -->
+
+<!-- Buttons -->
+<div class="row-fluid">
+    <div class="span4 offset4 ">
+        <p>
+            <button class="btn btn-large btn-primary" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Large button</button>
+        </p>
+    </div>
+</div> <!-- End Row -->
+
+<div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+    </div>
+    <div class="modal-body">
+        <%include file="login.mako"/>
+    </div>
+</div>
 
