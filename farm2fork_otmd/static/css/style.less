@@ -10,13 +10,24 @@
 @dark: #111;
 @light: #FFF;*/
 
-@green_dark: #A8CC31;
-@green_light: lighten(@green_dark, 30%);
-@accent1:#E94A08;
-@accent1d:#972F03;
-@accent1l:#F47843;
-@accent1ld: #AF5630;
-@accent2:#FFE513;
+// @green_dark: #A8CC31;
+// @green_light: lighten(@green_dark, 30%);
+// @accent1:#E94A08;
+// @accent1d:#972F03;
+// @accent1l:#F47843;
+// @accent1ld: #AF5630;
+// @accent2:#FFE513;
+// @accent3:#F9D818;
+// @dark: #111;
+// @light: #FFF;
+
+@green_dark: #6F7F06;
+@green_light: #AFC32E;
+@accent1:#CFA408;
+@accent1d:#806506;
+@accent1l:#FFF;
+@accent1ld: #FFF;
+@accent2:#ADE1E9;
 @accent3:#F9D818;
 @dark: #111;
 @light: #FFF;
@@ -43,13 +54,13 @@ body {
 
 #header {
     background-color:@green_dark;
-    .rounded-corners(0,4px);
+    .rounded-corners(0,8px);
 }
 
 h1 {
     color:@accent3;
     small {
-        color:@accent1d;
+        color:@accent1;
     }
 }
 
@@ -61,7 +72,7 @@ h2,h3 {
     margin-top: 20px;
     padding-top: 20px;
     background:@light;
-    .rounded-corners(4px,0);
+    .rounded-corners(8px,0);
 }
 
 .contents {
@@ -72,7 +83,7 @@ h2,h3 {
     text-align:center;
     font-size: small;
     color: @dark;
-    background-color: #E94A08;
+    background-color: @accent1;
     padding-bottom:20px;
 }
 

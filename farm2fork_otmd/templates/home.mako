@@ -34,7 +34,8 @@
 </div> <!-- End Row 1-->
 
 <div class="row-fluid">
-    <div class="span6 offset5">
+    <div class="span1"></div>
+    <div class="span6 offset4">
         <h3>What is farm2fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -49,13 +50,3 @@
         </p>
     </div>
 </div> <!-- End Row -->
-
-<div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="loginModalLabel">Login to Farm2fork</h3>
-    </div>
-    <div class="modal-body">
-        <%include file="login.mako"/>
-    </div>
-</div>
