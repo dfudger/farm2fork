@@ -7,14 +7,14 @@
 </%block>
 
 
-
-<div class="row-fluid">
+<!-- Carousel -->
+<div class="row-fluid"> 
     
-    <div id="myCarousel" class="carousel slide span8 offset2 hidden-phone">
+    <div id="myCarousel" class="carousel slide span12 hidden-phone">
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="active item">
-            <img src="http://farm4.staticflickr.com/3214/2661516211_26d6009b51.jpg" height="50" width="500" alt="Test Image One"/>
+            <img src="/static/img/sample1_1200x480.png" alt="Test Image One"/>
         </div>
         <div class="item">
             <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
@@ -33,6 +33,7 @@
 
 </div> <!-- End Row 1-->
 
+<!-- About F2F Section -->
 <div class="row-fluid">
     <div class="span1"></div>
     <div class="span6 offset4">
@@ -51,3 +52,22 @@
     </div>
 </div> <!-- End Row -->
 
+<!-- Buttons -->
+<div class="row-fluid">
+    <div class="span4 offset4 ">
+        <p>
+            <button class="btn btn-large btn-primary" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Large button</button>
+        </p>
+    </div>
+</div> <!-- End Row -->
+
+<div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+    </div>
+    <div class="modal-body">
+        <%include file="login.mako"/>
+    </div>
+</div>
