@@ -29,8 +29,10 @@
                                 </ul>
                                 <ul class="nav pull-right">
                                     <li>
-                                        <a href="#loginModal" role="button" data-toggle="modal" class="hidden-phone">login</a>
-                                        <a href="/login" class="visible-phone">login</a>
+                                        ## TODO send mobile to page
+                                        ## TODO if loged in don't show login
+                                        <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
+                                        <a href="/login" class="visible-phone" data-toggle="modal">login</a>
                                     </li>
                                 </ul>
                             </%block>
@@ -81,12 +83,24 @@
             </div> <!-- End Row -->
         </div> <!-- End Container -->
 
-        <!-- Apparently puting scripts here is benificial, so your page loads parallel with your scripts not after. -->
+        <!-- Login modal -->
+        <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="loginModalLabel">Login to Farm2fork</h3>
+            </div>
+            <div class="modal-body">
+                <%include file="login.mako"/>
+            </div>
+        </div>
+
+        <!-- puting scripts here is benificial, so your page loads parallel -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/static/js/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/static/js/less.js" type="text/javascript"></script>
         <script src="/static/js/script.js" type="text/javascript"></script>
     </body>
+
 
 </html>

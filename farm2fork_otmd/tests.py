@@ -15,6 +15,12 @@ class ViewTests(unittest.TestCase):
         info = get_home_page(request)
         self.assertEqual(info["title"], "Home")
 
+    def test_get_about_page(self):
+        from .views import get_about_page
+        request = testing.DummyRequest()
+        info = get_about_page(request)
+        self.assertEqual(info["title"], "About")
+
     def test_get_profile_page(self):
         from .views import get_profile_page
         request = testing.DummyRequest()
