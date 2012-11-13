@@ -14,13 +14,13 @@
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    <input name="given_name" type="text" placeholder="Enter your Given Name">
+                    <input name="first_name" type="text" placeholder="Enter your Given Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label">Surname</label>
                 <div class="controls">
-                    <input name="sur_name" type="text" placeholder="Enter your Surname">
+                    <input name="last_name" type="text" placeholder="Enter your Surname">
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox inline">
-                        <input name="farmer_box" type="checkbox"> Are you a farmer?
+                        <input name="farmer_box" id="farmerCheckbox" type="checkbox"> Are you a farmer?
                     </label>
                     <a href="#farmerModal" role="button" class="btn btn-small inline" data-toggle="modal">
                         Why do we ask?
@@ -163,6 +163,9 @@
         </p>
     </div>
     <div class="modal-footer">
+        <button class="btn btn-primary" onclick="$('#farmerCheckbox').prop('checked', true);$('#farmerModal').modal('hide')">
+            I am a Farmer
+        </button>
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     </div>
 </div>
