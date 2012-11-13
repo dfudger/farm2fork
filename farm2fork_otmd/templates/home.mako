@@ -66,13 +66,14 @@
 
 <!-- Buttons -->
 <div class="row-fluid">
-    <div class="span4 offset4 ">
+    <div class="span6 offset2">
         <p>
-            <button class="btn btn-large btn-success" type="button">Large button</button>
-            <button class="btn btn-large" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Donate Food</button>
+            <button class="btn btn-large" type="button">Donate Time</button>
+            <button class="btn btn-large" type="button">Donate Money</button>
         </p>
     </div>
-</div> <!-- End Row -->
+</div> <!-- End Row 2 - Buttons-->
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
