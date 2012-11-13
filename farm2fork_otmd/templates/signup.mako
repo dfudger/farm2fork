@@ -97,7 +97,7 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox inline">
-                        <input type="checkbox"> Are you a farmer?
+                        <input name="farmer_box" type="checkbox"> Are you a farmer?
                     </label>
                     <a href="#farmerModal" role="button" class="btn btn-small inline" data-toggle="modal">
                         Why do we ask?
@@ -109,13 +109,14 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
-                        <input type="checkbox"> I would like to receive a newsletter from farm2fork?
+                        <input name="newsletter_box" type="checkbox"> I would like to receive a newsletter from farm2fork?
                     </label>
                 </div>
             </div>
 
             <div class="control-group">
                 <div class="controls">
+                    ##<label onclick="$('#signup_button').attr('disabled', 'disabled');" class="checkbox">
                     <label class="checkbox">
                         <input name="tos_box" id="tosCheckbox" type="checkbox"> I agree to the 
                         <a href="#tosModal" role="button" data-toggle="modal">
@@ -127,7 +128,8 @@
             <!-- TODO add terms of service link -->
             <div class="control-group">
                 <div class="controls">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    ##<button id="signup_button" type="submit" disabled="disabled" class="btn btn-primary">Signup</button>
+                    <button id="signup_button" type="submit" class="btn btn-primary">Signup</button>
                 </div>
             </div>
         </form>
