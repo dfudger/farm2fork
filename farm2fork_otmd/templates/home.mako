@@ -8,59 +8,72 @@
 
 
 <!-- Carousel -->
-<div class="row-fluid"> 
-    
-    <div id="myCarousel" class="carousel slide span12 hidden-phone">
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-        <div class="active item">
-            <img src="/static/img/sample1_1200x480.png" alt="Test Image One"/>
+<div class="row-fluid hidden-phone"> 
+    <div class="span12">
+        <div id="myCarousel" class="carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+                <img src="/static/img/farm2.png" alt="test 1" />
+            </div>
+            <div class="item">
+                <img src="/static/img/farm3.png" alt="test 2" />
+            </div>
+            <div class="item">
+                <img src="/static/img/farm4.png" alt="test 3" />
+            </div>
+            <div class="item">
+                <img src="/static/img/farm1.png" alt="test 3" />
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <div class="item">
-            <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
-        </div>
-        <div class="item">
-            <img src="http://farm4.staticflickr.com/3034/2693444181_1f3ca8ab2e_b.jpg" height="100" width="500" alt="Test Image Three"/>
-        </div>
-        <div class="item">
-            <img src="http://farm7.staticflickr.com/6092/6277351449_ef58f0e709_b.jpg" height="100" width="500" alt="Test Image Four"/>
-        </div>
-      </div>
-      <!-- Carousel nav -->
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-
 </div> <!-- End Row 1-->
 
 <!-- About F2F Section -->
 <div class="row-fluid">
-    <div class="span1"></div>
-    <div class="span6 offset4">
-        <h3>What is farm2fork</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-            id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-            semper eget dui. Vestibulum nec metus metus. Curabitur aliquet, urna eu
-            consequat vulputate, orci nunc dictum leo, in iaculis odio lectus sit amet
-            arcu. Aliquam ac sem libero, at ultrices lorem. Phasellus non metus at tortor
-            facilisis vehicula eget sit amet velit. Vestibulum euismod porttitor nisl, non
-            sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
-        </p>
+    <div class="span1 hidden-phone">
+    </div>
+    <div class="span7 offset4">
+        <h2>What is Farm2Fork</h2>
+        <hr/>
+        <ul class="thumbnails pull-left" id="farmer-pic">
+            <li class="span12">
+                <div class="thumbnail">
+                    <img src="/static/img/farmer.jpg" alt="">
+                    <small>I'm a farmer, hells yeah!</small>
+                </div>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
+        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
+        semper eget dui.</p>
+
+        <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
+        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
+        semper eget dui.</p>
+
+        <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
 
 <!-- Buttons -->
 <div class="row-fluid">
-    <div class="span4 offset4 ">
+    <div class="span6 offset2">
         <p>
-            <button class="btn btn-large btn-primary" type="button">Large button</button>
-            <button class="btn btn-large" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Donate Food</button>
+            <button class="btn btn-large" type="button">Donate Time</button>
+            <button class="btn btn-large" type="button">Donate Money</button>
         </p>
     </div>
-</div> <!-- End Row -->
+</div> <!-- End Row 2 - Buttons-->
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">

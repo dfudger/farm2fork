@@ -4,7 +4,7 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h2 id="header_title">${title} <small>test</small></h2>
+    <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
 
@@ -14,40 +14,83 @@
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    <input type="text" placeholder="Enter your Given Name">
+                    <input name="given_name" type="text" placeholder="Enter your Given Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label">Surname</label>
                 <div class="controls">
-                    <input type="text" placeholder="Enter your Surname">
+                    <input name="sur_name" type="text" placeholder="Enter your Surname">
                 </div>
             </div>
 
+            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            <div class="control-group error">
+            %else:
             <div class="control-group">
+            %endif
                 <label class="control-label">Email</label>
                 <div class="controls">
-                    <input type="text" placeholder="Enter your Email">
+                    %if EMAIL_INVALID:
+                    <input name="email" type="text">
+                    <span class="help-inline">The Email you provided is not a valid email.</span>
+                    %elif EMAIL_MISMATCH:
+                    <input name="email" type="text">
+                    <span class="help-inline">The Emails you provided do not match each other.</span>
+                    %elif EMAIL_ALREADY_EXISTS:
+                    <input name="email" type="text">
+                    <span class="help-inline">The Email you chosen is already taken.</span>
+                    %else:
+                    <input name="email" type="text" placeholder="Enter your Email">
+                    %endif
                 </div>
             </div>
+            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            <div class="control-group error">
+            %else:
             <div class="control-group">
+            %endif
                 <label class="control-label">Confirm Email</label>
                 <div class="controls">
-                    <input type="text" placeholder="Repeat your Email">
+                    %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+                    <input name="con_email" type="text">
+                    %else:
+                    <input name="con_email" type="text" placeholder="Repeat your Email">
+                    %endif
                 </div>
             </div>
 
+            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            <div class="control-group error">
+            %else:
             <div class="control-group">
+            %endif
                 <label class="control-label">Password</label>
                 <div class="controls">
-                    <input type="text" placeholder="Enter a Password">
+                %if PASSWORD_INVALID:
+                    <input name="password" type="password" id="inputPassword">
+                    <span class="help-inline">The password you provided is invalid. It should be 8-20 characters long.</span>
+                %elif PASSWORD_MISMATCH:
+                    <input name="password" type="password" id="inputPassword">
+                    <span class="help-inline">The password you provided is incorrect</span>
+                %else:
+                    <input name="password" type="password" placeholder="Enter a Password">
+                %endif
                 </div>
             </div>
 
+            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            <div class="control-group error">
+            %else:
             <div class="control-group">
+            %endif
                 <label class="control-label">Confirm Password</label>
                 <div class="controls">
-                    <input type="text" placeholder="Repeat the same Password">
+                    %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+                    <input name="con_password" type="password">
+                    %else:
+                    <input name="con_password" type="password" placeholder="Repeat the same Password">
+                    %endif
                 </div>
             </div>
 
@@ -74,7 +117,7 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
-                        <input id="tosCheckbox" type="checkbox"> I agree to the 
+                        <input name="tos_box" id="tosCheckbox" type="checkbox"> I agree to the 
                         <a href="#tosModal" role="button" data-toggle="modal">
                             Terms of Service
                         </a>

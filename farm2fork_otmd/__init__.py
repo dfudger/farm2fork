@@ -11,6 +11,8 @@ def main(global_config, **settings):
     config.add_route('foodbankprofile', '/foodbankprofile')
     config.add_route('signup', '/signup')
     config.add_route('login', '/login')
-    config.add_route('construction', '/construction')
+
+    config.add_route('construction', '/foodbanks')
+    config.add_route('construction1', '/construction')
     config.scan()
     return config.make_wsgi_app()
