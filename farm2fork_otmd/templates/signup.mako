@@ -10,7 +10,7 @@
 
 <div class="fluid-row">
     <div class="span12">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="/signup" method="POST">
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
