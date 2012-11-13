@@ -25,7 +25,7 @@ def get_construction1_page(request):
 def get_signup_page(request):
     password_validity = True;
     return {"title":"Signup", "EMAIL_INVALID": False, "EMAIL_ALREADY_EXISTS": False, \
-        "EMAIL_MISMATCH": False, "PASSWORD_INVALID": False, "PASSWORD_MISMATCH": False,}
+        "EMAIL_MISMATCH": True, "PASSWORD_INVALID": False, "PASSWORD_MISMATCH": False,}
 
 @view_config(route_name="login", renderer="loginPage.mako")
 def get_login_page(request):
