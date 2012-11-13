@@ -31,4 +31,4 @@ def get_signup_page(request):
 def get_login_page(request):
     # TODO this should be a part of form
     # NOTE maybe password invalid should be incorrect
-    return {"title":"Login", "EMAIL_INVALID": False, "PASSWORD_INVALID": True}
+    return {"title":"Login", "EMAIL_INVALID": False, "PASSWORD_INVALID": False}

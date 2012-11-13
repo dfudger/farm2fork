@@ -1,5 +1,5 @@
 
-<form class="form-horizontal">
+<form class="form-horizontal" action="/login">
     %if not EMAIL_INVALID:
         <div class="control-group">
     %else:
@@ -24,11 +24,11 @@
     %endif
         <label class="control-label" for="inputPassword">Password</label>
         <div class="controls">
-            %if not PASSWORD_INVALID:
-                <input name="password" type="password" id="inputPassword" placeholder="Password">
-            %else:
+            %if PASSWORD_INVALID:
                 <input name="password" type="password" id="inputPassword">
                 <span class="help-inline">The password you provided is incorrect</span>
+            %else:
+                <input name="password" type="password" id="inputPassword" placeholder="Password">
             %endif
         </div>
     </div>
