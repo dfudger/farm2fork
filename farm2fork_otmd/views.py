@@ -24,5 +24,4 @@ def get_signup_page(request):
 
 @view_config(route_name="login", renderer="loginPage.mako")
 def get_login_page(request):
-    # TODO this should be a part of form
-    return {"title":"Login", "EMAIL_INVALID": False, "PASSWORD_INVALID": True}
+    return {"title":"Login"}
