@@ -17,6 +17,10 @@ def get_profile_page(request):
 def get_construction_page(request):
     return {"title":"Construction"}
 
+@view_config(route_name="construction1", renderer="construction.mako")
+def get_construction1_page(request):
+    return {"title":"Construction"}
+
 @view_config(route_name="signup", renderer="signup.mako")
 def get_signup_page(request):
     password_validity = True;
