@@ -32,7 +32,7 @@
                                         ## TODO send mobile to page
                                         ## TODO if loged in don't show login
                                         <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
-                                        <a href="/login" class="visible-phone" role="button" data-toggle="modal">login</a>
+                                        <a href="/login" class="visible-phone" data-toggle="modal">login</a>
                                     </li>
                                 </ul>
                             </%block>
@@ -61,6 +61,16 @@
             <div id="body" class="contents">
                 ${self.body()}
                 <div style="clear:both;"></div>
+            </div>
+
+            <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 id="loginModalLabel">Login to Farm2fork</h3>
+                </div>
+                <div class="modal-body">
+                    <%include file="login.mako"/>
+                </div>
             </div>
 
             <div class="row-fluid" id="footer">
