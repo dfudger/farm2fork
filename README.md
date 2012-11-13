@@ -1,8 +1,6 @@
 # farm2fork
 =========
 
-Testing. Dani is awesome. 
-
 A git repository for team 3 in the course cis3750
 
 Everyone has their own fork. There is nothing preventing you from messing with
