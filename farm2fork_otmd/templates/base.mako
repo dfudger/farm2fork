@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
         <style type="text/css">
             body {padding-top:40px;}
+            
         </style>
         <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.min.css" >
         <link rel="stylesheet/less" type="text/css" href="/static/css/style.less">
@@ -16,32 +17,39 @@
     </head>
 
     <body>
+        
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
                     <div class="row-fluid">
                         <div class="span12">
-                            <a class="brand" href="/">Farm2Fork</a>
+                            
+                            <!-- <img src="http://placehold.it/100x40" class="pull-left" style="width:100px;height:40px;" /> -->
+
+                            <a class="brand" href="/">This is a logo</a>
+
                             <%block name="navbar">
                                 <ul class="nav">
                                     <li><a href="/about">about</a></li>
-                                    <li><a href="/foodbanks">list of food providers</a></li>
-                                </ul>
-                                <ul class="nav pull-right">
-                                    <li>
-                                        ## TODO send mobile to page
-                                        ## TODO if loged in don't show login
-                                        <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
-                                        <a href="/login" class="visible-phone" data-toggle="modal">login</a>
-                                    </li>
+                                    <li><a href="/about">about</a></li>
+                                    <li><a href="/about">about</a></li>
                                 </ul>
                             </%block>
+                            <ul class="nav pull-right">
+                                <li>
+                                    % if LOGGED_IN is not None and LOGGED_IN is True:
+                                        <a href="/logout">logout</a>
+                                    % else:
+                                        <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
+                                        <a href="/login" class="visible-phone">login</a>
+                                    % endif
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- End Navbar -->
-        
+        </div>
         
         <div class="container-fluid">
             <div class="row-fluid" id="header">
@@ -60,7 +68,20 @@
             
             <div id="body" class="contents">
                 ${self.body()}
-                <div style="clear:both;"></div>
+                <div class="clearfix"></div>
+
+                <div class="row-fluid">
+                    <!-- <div class="span6 pull-right">
+                        <div class="addthis_toolbox addthis_default_style ">
+                            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                            <a class="addthis_button_tweet"></a>
+                            <a class="addthis_button_pinterest_pinit"></a>
+                            <a class="addthis_counter addthis_pill_style"></a>
+                        </div>
+                        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb45bd34006102f"></script>
+                    </div> -->
+                </div>
             </div>
 
             <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
