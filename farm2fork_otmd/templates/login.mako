@@ -42,3 +42,10 @@
     </div>
 </form>
 
+<hr>
+
+<div>
+    <p>Not a member of the Farm2Fork community yet?</p>
+    <a href="/signup" class="btn">Sign up for Farm2Fork</a>
+</div>
+
