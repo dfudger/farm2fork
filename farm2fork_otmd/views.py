@@ -13,6 +13,10 @@ def get_profile_page(request):
     usernameStr = request.matchdict.get("username")
     return {"title":"Profile", "username":usernameStr}
 
+@view_config(route_name="foodbankprofile", renderer="foodbankprofile.mako")
+def get_foodbankprofile_page(request):
+    return {"title":"Food Bank Profile"}
+
 @view_config(route_name="construction", renderer="construction.mako")
 def get_construction_page(request):
     return {"title":"Construction"}
