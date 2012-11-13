@@ -17,7 +17,7 @@
             <img src="/static/img/sample1_1200x480.png" alt="Test Image One"/>
         </div>
         <div class="item">
-            <img src="http://farm5.staticflickr.com/4040/4299696556_d09312cfe5_b.jpg" height="100" width="500" alt="Test Image Two"/>
+            <img src="http://gryphons.ca/images/2012/4/4/rp_primary_IMG_4859.JPG" alt="Test Image Two"/>
         </div>
         <div class="item">
             <img src="http://farm4.staticflickr.com/3034/2693444181_1f3ca8ab2e_b.jpg" height="100" width="500" alt="Test Image Three"/>
@@ -31,13 +31,13 @@
       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
 
-</div> <!-- End Row 1-->
+</div> <!-- End Row 1 About F2F-->
 
 <!-- About F2F Section -->
 <div class="row-fluid">
     <div class="span1"></div>
     <div class="span6 offset4">
-        <h3>What is farm2fork</h3>
+        <h3>What is Farm2Fork</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
@@ -51,18 +51,18 @@
         </p>
     </div>
 </div> <!-- End Row -->
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 <!-- Buttons -->
 <div class="row-fluid">
-    <div class="span4 offset4 ">
+    <div class="span6 offset2">
         <p>
-            <button class="btn btn-large btn-primary" type="button">Large button</button>
-            <button class="btn btn-large" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Donate Food</button>
+            <button class="btn btn-large" type="button">Donate Time</button>
+            <button class="btn btn-large" type="button">Donate Money</button>
         </p>
     </div>
-</div> <!-- End Row -->
+</div> <!-- End Row 2 - Buttons-->
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -73,8 +73,4 @@
         <%include file="login.mako"/>
     </div>
 </div>
-=======
->>>>>>> f08c4ab43cd9a564614ce5e98cd61fdd09e63a9f
-=======
 
->>>>>>> 64424c092e4fb68231534464c48816283b2f120c
