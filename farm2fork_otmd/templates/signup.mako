@@ -104,7 +104,6 @@
                     </a>
                 </div>
             </div>
-            <!-- TODO add why do you ask -->
 
             <div class="control-group">
                 <div class="controls">
@@ -125,11 +124,11 @@
                     </label>
                 </div>
             </div>
-            <!-- TODO add terms of service link -->
+
             <div class="control-group">
                 <div class="controls">
                     ##<button id="signup_button" type="submit" disabled="disabled" class="btn btn-primary">Signup</button>
-                    <button id="signup_button" type="submit" class="btn btn-primary">Signup</button>
+                    <button id="signup_button" type="submit" disabled="disabled" class="btn btn-primary">Signup</button>
                 </div>
             </div>
         </form>
@@ -189,7 +188,8 @@
         </p>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-primary" onclick="$('#tosCheckbox').prop('checked', true);$('#tosModal').modal('hide')">I Agree</button>
+        <button class="btn btn-primary" onclick="$('#tosCheckbox').prop('checked', true);$('#signup_button').removeAttr('disabled');$('#tosModal').modal('hide')">I Agree</button>
+            
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     </div>
 </div>
