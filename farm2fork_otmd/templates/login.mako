@@ -1,15 +1,35 @@
 
 <form class="form-horizontal">
-    <div class="control-group">
+    %if not EMAIL_INVALID:
+        <div class="control-group">
+    %else:
+        <div class="control-group error">
+    %endif
         <label class="control-label" for="inputEmail">Email</label>
         <div class="controls">
-            <input type="text" id="inputEmail" placeholder="Email">
+            %if not EMAIL_INVALID:
+                <input name="email" type="text" id="inputEmail" placeholder="Email">
+            %else:
+                <input name="email" type="text" id="inputEmail">
+                <span class="help-inline">This email is invalid</span>
+            %endif
+            
         </div>
     </div>
-    <div class="control-group">
+    
+    %if not PASSWORD_INVALID:
+        <div class="control-group">
+    %else:
+        <div class="control-group error">
+    %endif
         <label class="control-label" for="inputPassword">Password</label>
         <div class="controls">
-            <input type="password" id="inputPassword" placeholder="Password">
+            %if not PASSWORD_INVALID:
+                <input name="password" type="password" id="inputPassword" placeholder="Password">
+            %else:
+                <input name="password" type="password" id="inputPassword">
+                <span class="help-inline">The password you provided is incorrect</span>
+            %endif
         </div>
     </div>
     <div class="control-group">
