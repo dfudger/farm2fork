@@ -25,10 +25,10 @@
 
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <li>Volunteer: Joe Tomatoe</li>
+                            <li>Volunteer: ${user.first_name} ${user.last_name}</li>
                             <li>Phone: 519-226-1235</li>
                             <li>Fax:   221-231-1422</li>
-                            <li><a href="mailto:testuser@example.com">Email: testuser@example.com</a></li>
+                            <li><a href="mailto:${user.email}">Email:${user.email}</a></li>
                         </div>
                     </div>
                 </div>
