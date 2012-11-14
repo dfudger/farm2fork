@@ -1,30 +1,30 @@
 
 <form class="form-horizontal" action="/login" method="POST">
-    %if not EMAIL_INVALID:
-        <div class="control-group">
-    %else:
+    %if form.get("EMAIL_INVALID"):
         <div class="control-group error">
+    %else:
+        <div class="control-group">
     %endif
         <label class="control-label" for="inputEmail">Email</label>
         <div class="controls">
-            %if not EMAIL_INVALID:
-                <input name="email" type="text" id="inputEmail" placeholder="Email">
-            %else:
+            %if form.get("EMAIL_INVALID"):
                 <input name="email" type="text" id="inputEmail">
                 <span class="help-inline">This email is invalid</span>
+            %else:
+                <input name="email" type="text" id="inputEmail" placeholder="Email">
             %endif
             
         </div>
     </div>
     
-    %if not PASSWORD_INVALID:
-        <div class="control-group">
-    %else:
+    %if form.get("PASSWORD_INVALID"):
         <div class="control-group error">
+    %else:
+        <div class="control-group">
     %endif
         <label class="control-label" for="inputPassword">Password</label>
         <div class="controls">
-            %if PASSWORD_INVALID:
+            %if form.get("PASSWORD_INVALID"):
                 <input name="password" type="password" id="inputPassword">
                 <span class="help-inline">The password you provided is incorrect</span>
             %else:
