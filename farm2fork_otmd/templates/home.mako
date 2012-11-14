@@ -36,9 +36,9 @@
 <div class="row-fluid">
     <div class="span12">
         <p id="buttonContainer">
-            <button class="button">Donate Food</button>
-            <button class="button">Donate Time</button>
-            <button class="button">Donate Money</button>
+            <button class="button"><i class="icon-shopping-cart icon-white"></i> Donate Food</button>
+            <button class="button"><i class="icon-time icon-white"></i> Donate Time</button>
+            <button class="button"><sup>$</sup> Donate Money</button>
         </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
