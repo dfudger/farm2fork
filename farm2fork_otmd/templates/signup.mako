@@ -127,8 +127,7 @@
 
             <div class="control-group">
                 <div class="controls">
-                    ##<button id="signup_button" type="submit" disabled="disabled" class="btn btn-primary">Signup</button>
-                    <button id="signup_button" type="submit" disabled="disabled" class="btn btn-primary">Signup</button>
+                    <button id="signup_button" type="submit" disabled="disabled" class="btn">Signup</button>
                 </div>
             </div>
         </form>
