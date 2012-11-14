@@ -1,0 +1,9 @@
+/
+/home
+/profile/{username}
+/foodbankprofile/{foodbank}
+/about
+/signup
+/signup_complete
+/login
+/construction
