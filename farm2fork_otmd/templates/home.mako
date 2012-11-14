@@ -45,20 +45,34 @@
 
 <!-- About F2F Section -->
 <div class="row-fluid">
-    <div class="span1 hidden-phone">
+    <div class="span5">
+        <!--<div class="buttonR green">
+            <p>Signup!</p>
+        </div>-->
+        <div class="signupBtn hidden-phone">
+            <h3>Sign Up</h3>
+            <p>Join the F2F Community!</p>
+        </div>
     </div>
-    <div class="span7 offset4">
-        <h2>What is Farm2Fork?</h2>
+    <div class="span7">
+        <h2>What is Farm2Fork</h2>
         <hr/>
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
-                    <img src="/static/img/farmer.jpg" alt="Image of a farmer.">
-                    <small>I'm a farmer!</small>
+                    <img src="/static/img/volunteer1.jpg" alt="Volunteers packing food.">
+                    <small>Students packaging donations.</small>
                 </div>
             </li>
         </ul>
-        <p>Farm2Fork is a project created to ease communication between Emergency Food Providers (EFPs) and members of their local community.  Currently, there are times in which EFPs are having to reject donations because of storage limitations or are unable to collect priority items because of difficulties with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post a list of their current needs and provides a location for community members to view the requests and offer contributions.
+        <p>
+            Farm2Fork is a project created to ease communication between Emergency Food
+            Providers (EFPs) and members of their local community.  Currently, there are
+            times in which EFPs are having to reject donations because of storage
+            limitations or are unable to collect priority items because of difficulties
+            with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post
+            a list of their current needs and provides a location for community members to
+            view the requests and offer contributions.
         </p>
 
         <p class="hidden-phone"></p>

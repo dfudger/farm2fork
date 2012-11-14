@@ -21,9 +21,9 @@
         </p>
     </div>
     <div class="span4">
-        <h3>Under Construction!</h3>
+        <!--<h3>Under Construction!</h3>-->
         <p>
-            Ipsum lorem, lollygagging about in the roudabout way.
+            <img src="/static/img/construction.jpg" alt="Farm2Fork logo">
         </p>
     </div>
 </div>
