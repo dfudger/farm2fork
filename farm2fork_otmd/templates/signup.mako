@@ -14,7 +14,7 @@
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH") or form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="first_name" type="text" value="${form.first_name}">
                     %else:
                     <input name="first_name" type="text" placeholder="Enter your Given Name">

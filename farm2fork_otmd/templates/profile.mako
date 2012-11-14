@@ -1,10 +1,10 @@
 
 <%inherit file="base.mako"/>
 
-<%block name="page_title">farm2fork - ${title} of ${user.first_name}</%block>
+<%block name="page_title">farm2fork - ${user.first_name}</%block>
 
 <%block name="header">
-    <h1 id="header_title">${title} <small>${user.first_name}</small></h1>
+    <h1 id="header_title">${user.first_name}</h1>
 </%block>
 
 
