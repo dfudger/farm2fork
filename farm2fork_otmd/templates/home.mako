@@ -36,9 +36,15 @@
 <div class="row-fluid">
     <div class="span12">
         <p id="buttonContainer">
+<<<<<<< HEAD
             <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
+=======
+            <button class="button"><i class="icon-shopping-cart icon-white"></i> Donate Food</button>
+            <button class="button"><i class="icon-time icon-white"></i> Donate Time</button>
+            <button class="button"><sup>$</sup> Donate Money</button>
+>>>>>>> 29a869437622c292a2cc05925d093bd89870aaf6
         </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
@@ -54,37 +60,35 @@
             <p>Join the Farm2Fork Community!</p></a>
         </div>
     </div>
-    <div class="span7   ">
+    <div class="span7">
         <h2>What is Farm2Fork</h2>
         <hr/>
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
                     <img src="/static/img/volunteer1.jpg" alt="Volunteers packing food.">
-                    <small>Students packinging donations.</small>
+                    <small>Students packaging donations.</small>
                 </div>
             </li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
+        <p>
+            Farm2Fork is a project created to ease communication between Emergency Food
+            Providers (EFPs) and members of their local community.  Currently, there are
+            times in which EFPs are having to reject donations because of storage
+            limitations or are unable to collect priority items because of difficulties
+            with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post
+            a list of their current needs and provides a location for community members to
+            view the requests and offer contributions.
+        </p>
 
-        <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
-
-        <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
+
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+        <h3 id="loginModalLabel">Login to Farm2Fork</h3>
     </div>
     <div class="modal-body">
         <%include file="login.mako"/>

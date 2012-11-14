@@ -10,34 +10,43 @@
 
 <div class="fluid-row">
     <div class="span12">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="/signup" method="POST">
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    <input name="given_name" type="text" placeholder="Enter your Given Name">
+                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    <input name="last_name" type="text" value="${form.first_name}">
+                    %else:
+                    <input name="first_name" type="text" placeholder="Enter your Given Name">
+                    %endif
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label">Surname</label>
                 <div class="controls">
-                    <input name="sur_name" type="text" placeholder="Enter your Surname">
+                    
+                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    <input name="last_name" type="text" value="${form.last_name}">
+                    %else:
+                    <input name="last_name" type="text" placeholder="Enter your Surname">
+                    %endif
                 </div>
             </div>
 
-            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Email</label>
                 <div class="controls">
-                    %if EMAIL_INVALID:
+                    %if form.get("EMAIL_INVALID"):
                     <input name="email" type="text">
                     <span class="help-inline">The Email you provided is not a valid email.</span>
-                    %elif EMAIL_MISMATCH:
-                    <input name="email" type="text">
+                    %elif form.get("EMAIL_MISMATCH"):
+                    <input name="email" type="text" value="${form.email}">
                     <span class="help-inline">The Emails you provided do not match each other.</span>
-                    %elif EMAIL_ALREADY_EXISTS:
+                    %elif form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="email" type="text">
                     <span class="help-inline">The Email you chosen is already taken.</span>
                     %else:
@@ -45,14 +54,14 @@
                     %endif
                 </div>
             </div>
-            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Confirm Email</label>
                 <div class="controls">
-                    %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="con_email" type="text">
                     %else:
                     <input name="con_email" type="text" placeholder="Repeat your Email">
@@ -60,33 +69,34 @@
                 </div>
             </div>
 
-            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Password</label>
                 <div class="controls">
-                %if PASSWORD_INVALID:
+                %if form.get("PASSWORD_INVALID"):
                     <input name="password" type="password" id="inputPassword">
-                    <span class="help-inline">The password you provided is invalid. It should be 8-20 characters long.</span>
-                %elif PASSWORD_MISMATCH:
+                    <span class="help-inline">The password you provided does not meet our standards. It should be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
+                %elif form.get("PASSWORD_MISMATCH"):
                     <input name="password" type="password" id="inputPassword">
                     <span class="help-inline">The password you provided is incorrect</span>
                 %else:
                     <input name="password" type="password" placeholder="Enter a Password">
+                    <span class="help-inline">Your password must be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
                 %endif
                 </div>
             </div>
 
-            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Confirm Password</label>
                 <div class="controls">
-                    %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
                     <input name="con_password" type="password">
                     %else:
                     <input name="con_password" type="password" placeholder="Repeat the same Password">
@@ -97,19 +107,18 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox inline">
-                        <input type="checkbox"> Are you a farmer?
+                        <input name="farmer_box" id="farmerCheckbox" type="checkbox"> Are you a farmer?
+                        <a href="#farmerModal" role="button" data-toggle="modal">
+                            Why do we ask?
+                        </a>
                     </label>
-                    <a href="#farmerModal" role="button" class="btn btn-small inline" data-toggle="modal">
-                        Why do we ask?
-                    </a>
                 </div>
             </div>
-            <!-- TODO add why do you ask -->
 
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
-                        <input type="checkbox"> I would like to receive a newsletter from farm2fork?
+                        <input type="checkbox"> I would like to receive a newsletter from Farm2Fork
                     </label>
                 </div>
             </div>
@@ -124,10 +133,10 @@
                     </label>
                 </div>
             </div>
-            <!-- TODO add terms of service link -->
+
             <div class="control-group">
                 <div class="controls">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="signup_button" type="submit" disabled="disabled" class="btn">Signup</button>
                 </div>
             </div>
         </form>
@@ -138,29 +147,25 @@
 <div id="farmerModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="farmerModalLabel">Why are we asking if you are a farmer?</h3>
+        <h3 id="farmerModalLabel">Why do we ask if you are a farmer?</h3>
     </div>
     <div class="modal-body">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra
-            mollis sem suscipit consequat. Proin tellus lacus, volutpat nec fringilla id,
-            venenatis id quam. Mauris eu elit sit amet lorem luctus posuere convallis sit
-            amet nunc. Etiam pulvinar pharetra lacus ut consequat. Sed vitae ante a odio
-            faucibus cursus. Praesent eu ante et nulla ornare venenatis eget vel ante.
-            Phasellus sollicitudin pharetra tempor. Curabitur molestie euismod tempor. Cras
-            eget orci ut nibh iaculis interdum.
+            Bill 104 is currently being passed through the Legislative Assembly
+            of Ontario which will grant a tax credit for certain donations made to Ontario
+            Food Banks by farmers.  By creating a Farm2Fork account listed as a farmer, you
+            will be eligible to receive a tax receipt for your bulk donations made through
+            the website.
+        </p>
         <p>
+            Please note that it is not certain that this bill will be passed.
         </p>
-            Maecenas vehicula ligula sem. Praesent faucibus ligula non nisl viverra
-            sodales. Aenean mollis eros consequat nibh bibendum tristique. Donec posuere
-            adipiscing nunc et venenatis. Vestibulum porta nisi quis dui mollis interdum.
-            Nam ac purus nunc. Aliquam nec est eu metus pellentesque sagittis eleifend at
-            arcu. Maecenas eu risus in neque gravida ultricies. Nulla faucibus congue
-            faucibus. Phasellus quis mollis nisl. Nam ut augue risus. Sed pretium
-            pellentesque nisl, et lobortis orci rutrum molestie. 
-        </p>
+
     </div>
     <div class="modal-footer">
+        <button class="btn btn-primary" onclick="$('#farmerCheckbox').prop('checked', true);$('#farmerModal').modal('hide')">
+            I am a Farmer
+        </button>
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     </div>
 </div>
@@ -184,7 +189,8 @@
         </p>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-primary" onclick="$('#tosCheckbox').prop('checked', true);$('#tosModal').modal('hide')">I Agree</button>
+        <button class="btn btn-primary" onclick="$('#tosCheckbox').prop('checked', true);$('#signup_button').removeAttr('disabled');$('#tosModal').modal('hide')">I Agree</button>
+            
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     </div>
 </div>
