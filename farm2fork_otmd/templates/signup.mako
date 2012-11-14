@@ -24,20 +24,20 @@
                 </div>
             </div>
 
-            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Email</label>
                 <div class="controls">
-                    %if EMAIL_INVALID:
+                    %if form.get("EMAIL_INVALID"):
                     <input name="email" type="text">
                     <span class="help-inline">The Email you provided is not a valid email.</span>
-                    %elif EMAIL_MISMATCH:
+                    %elif form.get("EMAIL_MISMATCH"):
                     <input name="email" type="text">
                     <span class="help-inline">The Emails you provided do not match each other.</span>
-                    %elif EMAIL_ALREADY_EXISTS:
+                    %elif form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="email" type="text">
                     <span class="help-inline">The Email you chosen is already taken.</span>
                     %else:
