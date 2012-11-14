@@ -15,7 +15,7 @@
                 <label class="control-label">Given Name</label>
                 <div class="controls">
                     %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
-                    <input name="last_name" type="text" value="${form.first_name}">
+                    <input name="first_name" type="text" value="${form.first_name}">
                     %else:
                     <input name="first_name" type="text" placeholder="Enter your Given Name">
                     %endif
@@ -118,7 +118,7 @@
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
-                        <input type="checkbox"> I would like to receive a newsletter from Farm2Fork
+                        <input name="newsletter_box" type="checkbox"> I would like to receive a newsletter from Farm2Fork
                     </label>
                 </div>
             </div>

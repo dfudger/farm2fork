@@ -36,21 +36,11 @@
 <div class="row-fluid">
     <div class="span12">
         <p id="buttonContainer">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
-=======
-            <button class="button"><i class="icon-shopping-cart icon-white"></i> Donate Food</button>
-            <button class="button"><i class="icon-time icon-white"></i> Donate Time</button>
-            <button class="button"><sup>$</sup> Donate Money</button>
->>>>>>> 29a869437622c292a2cc05925d093bd89870aaf6
-=======
-            <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
-            <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
-            <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
->>>>>>> 8b018048cde6c138a655946850dcfa4c7374cdd7
+
         </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
@@ -77,7 +67,7 @@
                 </div>
             </li>
         </ul>
-        <p>
+        <p id="aboutP">
             Farm2Fork is a project created to ease communication between Emergency Food
             Providers (EFPs) and members of their local community.  Currently, there are
             times in which EFPs are having to reject donations because of storage
