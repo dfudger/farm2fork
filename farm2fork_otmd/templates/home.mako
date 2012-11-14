@@ -38,7 +38,7 @@
     <div class="span1 hidden-phone">
     </div>
     <div class="span7 offset4">
-        <h2>What is Farm2Fork</h2>
+        <h2>What is Farm2Fork?</h2>
         <hr/>
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
@@ -48,7 +48,8 @@
                 </div>
             </li>
         </ul>
-        <p>Farm2Fork is a project created with the intent of solving the problem of a lack of available fresh food from Emergency Food Providers (EFPs) by addressing the minimal amount of communication between them. Currently, there are times in which EFPs are either rejecting donations because of space limitations or when they simply do not have enough food to give out. There is a particular need for fresh vegetables or meat to facilitate a healthier lifestyle of those in need. The goal of this project is to meet these needs by bringing awareness to those in the community who would be willing to lend a hand through methods of donating goods, time and money.</p>
+        <p>Farm2Fork is a project created to ease communication between Emergency Food Providers (EFPs) and members of their local community.  Currently, there are times in which EFPs are having to reject donations because of storage limitations or are unable to collect priority items because of difficulties with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post a list of their current needs and provides a location for community members to view the requests and offer contributions.
+        </p>
 
         <p class="hidden-phone"></p>
 

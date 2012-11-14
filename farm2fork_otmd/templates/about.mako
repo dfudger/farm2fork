@@ -27,15 +27,7 @@
     <div class="span6">
         <h3>About farm2fork</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-            id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-            semper eget dui. Vestibulum nec metus metus. Curabitur aliquet, urna eu
-            consequat vulputate, orci nunc dictum leo, in iaculis odio lectus sit amet
-            arcu. Aliquam ac sem libero, at ultrices lorem. Phasellus non metus at tortor
-            facilisis vehicula eget sit amet velit. Vestibulum euismod porttitor nisl, non
-            sagittis massa viverra non. In elit risus, molestie blandit pulvinar.  
+            Farm2Fork is a project created to ease communication between Emergency Food Providers (EFPs) and members of their local community.  Currently, there are times in which EFPs are having to reject donations because of storage limitations or are unable to collect priority items because of difficulties with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post a list of their current needs and provides a location for community members to view the requests and offer contributions.
         </p>
     </div>
 
