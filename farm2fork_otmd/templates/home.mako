@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <div class="span6 offset2">
         <p>
-            <button class="btn btn-large" type="button">Donate Food</button>
-            <button class="btn btn-large" type="button">Donate Time</button>
+            <button class="btn btn-large" type="button"><i class="icon-shopping-cart"></i> Donate Food</button>
+            <button class="btn btn-large" type="button"><i class="icon-time"></i> Donate Time</button>
             <button class="btn btn-large" type="button">Donate Money</button>
         </p>
     </div>
