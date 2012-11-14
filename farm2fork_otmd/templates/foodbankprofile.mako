@@ -4,7 +4,7 @@
 <%block name="page_title">farm2fork - ${title}</%block>
 
 <%block name="header">
-    <h1 id="header_title">${title} <small>testicles</small></h1>
+    <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
 
@@ -41,7 +41,7 @@
                             <li>Head Coordinator: Jane Doe</li>
                             <li>Phone: 519-226-1235</li>
                             <li>Fax:   221-231-1422</li>
-                            <li><a href="mailto:test@example.com">Email: testfarm@example.com</a></li>
+                            <li><a href="mailto:testfarm@example.com">Email: testfarm@example.com</a></li>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,4 @@
 
         </div>
     </div>
-
-
-
-
 </div>
