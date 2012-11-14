@@ -41,7 +41,7 @@
                                         <a href="/logout">logout</a>
                                     % else:
                                         <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
-                                        <a href="/login" class="visible-phone">login</a>
+                                        <a href="/login" class="visible-phone">login/signup</a>
                                     % endif
                                 </li>
                             </ul>

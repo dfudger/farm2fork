@@ -45,16 +45,23 @@
 
 <!-- About F2F Section -->
 <div class="row-fluid">
-    <div class="span1 hidden-phone">
+    <div class="span5">
+        <!--<div class="buttonR green">
+            <p>Signup!</p>
+        </div>-->
+        <div class="signupBtn hidden-phone">
+            <h3>Sign Up</h3>
+            <p>Join the F2F Community!</p>
+        </div>
     </div>
-    <div class="span7 offset4">
+    <div class="span7   ">
         <h2>What is Farm2Fork</h2>
         <hr/>
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
-                    <img src="/static/img/farmer.jpg" alt="Image of a farmer.">
-                    <small>I'm a farmer!</small>
+                    <img src="/static/img/volunteer1.jpg" alt="Volunteers packing food.">
+                    <small>Students packinging donations.</small>
                 </div>
             </li>
         </ul>
