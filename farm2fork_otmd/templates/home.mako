@@ -35,16 +35,11 @@
 <!-- Buttons -->
 <div class="row-fluid">
     <div class="span12">
-        <div class="span4 donate_buttons">
-            ## TODO change button class to donate_button
+        <p id="buttonContainer">
             <button class="button">Donate Food</button>
-        </div>
-        <div class="span4 donate_buttons">
-                <button class="button">Donate Time</button>
-        </div>
-        <div class="span4 donate_buttons">
-                <button class="button">Donate Money</button>
-        </div>
+            <button class="button">Donate Time</button>
+            <button class="button">Donate Money</button>
+        </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
 
