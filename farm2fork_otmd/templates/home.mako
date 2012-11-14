@@ -6,7 +6,6 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
@@ -59,8 +58,8 @@
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
-                    <img src="/static/img/farmer.jpg" alt="">
-                    <small>I'm a farmer, hells yeah!</small>
+                    <img src="/static/img/farmer.jpg" alt="Image of a farmer.">
+                    <small>I'm a farmer!</small>
                 </div>
             </li>
         </ul>
