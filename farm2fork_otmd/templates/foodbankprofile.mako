@@ -25,15 +25,16 @@
 
                     <div id="collapseOne" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <div id="mapviewer"><iframe id="map" scrolling="no" width="500" height="400" frameborder="0" 
-                                src="http://www.bing.com/maps/embed/?v=2&amp;cp=43.518666~-80.237920&amp;lvl=17&amp;dir=0&amp;
-                                sty=r&amp;vm=nokia-stoneroadmall&amp;f=Level%201&amp;form=LMLTEW&amp;emid=ea889b77-7cf5-fe8e-6fc0-53e10dcae7fb">
-                                </iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?v=2&amp;
-                                cp=43.518666~-80.237920&amp;lvl=17&amp;dir=0&amp;sty=r&amp;vm=nokia-stoneroadmall&amp;f=Level%201&amp;form=LMLTEW" 
-                                target="_blank" style="margin:0 7px">View Larger Map</a><a id="LME_directions" 
-                                href="http://www.bing.com/maps/?v=2&amp;cp=43.518666~-80.237920&amp;lvl=17&amp;dir=0&amp;sty=r&amp;
-                                vm=nokia-stoneroadmall&amp;f=Level%201&amp;form=LMLTEW&amp;rtp=%7Epos.43.51866599999999_-80.23792000000002_guelph%20stone%20road%20mall" 
-                                target="_blank" style="margin:0 7px">Driving Directions</a></div>
+                            <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="340" height="280" frameborder="0" 
+                                src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=43.524553~-80.213331&amp;sty=r&amp;draggable=false&amp;
+                                v=2&amp;dir=0&amp;form=LMLTEW&amp;mkt=en-ca&amp;emid=c922a74d-98a5-ff72-b4fe-c5c83766536a&amp;w=350&amp;h=280">
+                                </iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" 
+                                href="http://www.bing.com/maps/?cp=43.524553~-80.213331&amp;sty=h&amp;lvl=14&amp;where1=&amp;mm_embed=map&amp;
+                                form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" 
+                                href="http://www.bing.com/maps/?cp=43.524553~-80.213331&amp;sty=h&amp;lvl=14&amp;rtp=~pos.43.524553_-80.213331_&amp;
+                                mm_embed=dir&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a id="LME_birdsEye" 
+                                href="http://www.bing.com/maps/?cp=r7mpgn89g004&amp;sty=b&amp;lvl=18&amp;where1=&amp;mm_embed=be&amp;
+                                form=LMLTEW" target="_blank">View Bird's Eye</a></div>
                             </div>
                         </div>
                     </div>
@@ -72,8 +73,46 @@
 
             <div>
                 <h3>Hours</h3>
+                <table class="table">  
+                    <thead>  
+                        <tr>  
+                            <th>Monday</th>  
+                            <th>Tuesday</th>  
+                            <th>Wednesday</th>  
+                            <th>Thursday</th>  
+                            <th>Friday</th>  
+                            <th>Saturday</th>  
+                            <th>Sunday</th>     
+                        </tr>  
+                    </thead>
+
+                    <tbody>  
+                        <tr>  
+                            <td>12:00AM-12:00PM</td>
+                            <td>12:00AM-12:00PM</td> 
+                            <td>12:00AM-12:00PM</td>
+                            <td>12:00AM-12:00PM</td>
+                            <td>12:00AM-12:00PM</td> 
+                            <td>12:00AM-12:00PM</td>
+                            <td>12:00AM-12:00PM</td>
+                        </tr>  
+                    </tbody>  
+                </table> 
+                    
+            </div>
+
+            <div>
+                <p>
+                    <button class="btn btn-large" type="button">Donate Food</button>
+                    <button class="btn btn-large" type="button">Donate Time</button>
+                    <button class="btn btn-large" type="button">Donate Money</button>
+                </p>
             </div>
 
         </div>
     </div>
+
+
+
+
 </div>
