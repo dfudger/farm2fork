@@ -20,7 +20,12 @@
             <div class="control-group">
                 <label class="control-label">Surname</label>
                 <div class="controls">
+                    
+                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    <input name="last_name" type="text" value="${form.last_name}">
+                    %else:
                     <input name="last_name" type="text" placeholder="Enter your Surname">
+                    %endif
                 </div>
             </div>
 
@@ -35,7 +40,7 @@
                     <input name="email" type="text">
                     <span class="help-inline">The Email you provided is not a valid email.</span>
                     %elif form.get("EMAIL_MISMATCH"):
-                    <input name="email" type="text">
+                    <input name="email" type="text" value="${form.email}">
                     <span class="help-inline">The Emails you provided do not match each other.</span>
                     %elif form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="email" type="text">
@@ -144,7 +149,11 @@
     </div>
     <div class="modal-body">
         <p>
-            Bill 104 is currently being passed through the Legislative Assembly of Ontario which will grant a tax credit for certain donations made to Ontario Food Banks by farmers.  By creating a Farm2Fork account listed as a farmer, you will be eligible to receive a tax receipt for your bulk donations made through the website.
+            Bill 104 is currently being passed through the Legislative Assembly
+            of Ontario which will grant a tax credit for certain donations made to Ontario
+            Food Banks by farmers.  By creating a Farm2Fork account listed as a farmer, you
+            will be eligible to receive a tax receipt for your bulk donations made through
+            the website.
         </p>
         <p>
             Please note that it is not certain that this bill will be passed.
