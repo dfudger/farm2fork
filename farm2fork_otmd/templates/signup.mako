@@ -108,10 +108,10 @@
                 <div class="controls">
                     <label class="checkbox inline">
                         <input name="farmer_box" id="farmerCheckbox" type="checkbox"> Are you a farmer?
+                        <a href="#farmerModal" role="button" data-toggle="modal">
+                            Why do we ask?
+                        </a>
                     </label>
-                    <a href="#farmerModal" role="button" data-toggle="modal">
-                        Why do we ask?
-                    </a>
                 </div>
             </div>
 
