@@ -13,8 +13,11 @@
         <div class="controls">
             %if form:
                 %if form.get("EMAIL_INVALID"):
-                    <input name="email" type="text" id="inputEmail">
-                    <span class="help-inline">This email is invalid</span>
+                <input name="email" type="text" id="inputEmail">
+                <span class="help-inline">This email is invalid</span>
+                %elif form.get("NOT_VERIFIED"):
+                <input name="email" type="text" id="inputEmail" value="${form.email}">
+                <span class="help-inline">You must verify your account before you can login</span>
                 %else:
                 <input name="email" type="text" id="inputEmail" placeholder="Email">
                 %endif
