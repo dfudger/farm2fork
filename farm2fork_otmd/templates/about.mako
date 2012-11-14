@@ -6,6 +6,22 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
+<%block name="navbar">
+    <ul class="nav">
+        <li class="active"><a href="/about">about</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/about">about</a></li>
+    </ul>
+</%block>
+
+
+<div class="row-fluid">
+    <div class="span12">
+        <div class="page-header">
+            <h1>About <small>Farm2Fork</small></h1>
+        </div>
+    </div>
+</div>
 
 <div class="row-fluid">
     <div class="span6">
