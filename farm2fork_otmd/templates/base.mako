@@ -37,7 +37,7 @@
                             </%block>
                             <ul class="nav pull-right">
                                 <li>
-                                    % if LOGGED_IN is not None and LOGGED_IN is True:
+                                    % if user:
                                         <a href="/logout">logout</a>
                                     % else:
                                         <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
@@ -71,7 +71,7 @@
                 <div class="clearfix"></div>
 
                 <div class="row-fluid">
-                    <!-- <div class="span6 pull-right">
+                    <div class="span4 pull-right">
                         <div class="addthis_toolbox addthis_default_style ">
                             <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
                             <a class="addthis_button_tweet"></a>
@@ -80,7 +80,7 @@
                         </div>
                         <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
                         <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb45bd34006102f"></script>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
