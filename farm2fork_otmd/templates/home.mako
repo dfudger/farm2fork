@@ -48,12 +48,11 @@
                 </div>
             </li>
         </ul>
-        <p>Farm2Fork is a project created to ease communication between Emergency Food Providers (EFPs) and members of their local community.  Currently, there are times in which EFPs are having to reject donations because of storage limitations or are unable to collect priority items because of difficulties with advertising.  Farm2Fork offers a solution by allowing EFPs to easily post a list of their current needs and provides a location for community members to view the requests and offer contributions.
+        <p>Connect with your local Emergency Food Provider and contribute to the wellness of your community. :)
         </p>
 
         <p class="hidden-phone"></p>
 
-        <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
 

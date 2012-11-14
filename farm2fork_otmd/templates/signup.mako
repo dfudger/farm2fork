@@ -142,7 +142,7 @@
     </div>
     <div class="modal-body">
         <p>
-            Bill 104 is currently being passed through the Legislative Assembly of Ontario which will grant a tax credit for certain donations made to Ontario Food Banks by farmers.  By creating a Farm2Fork account listed as a farmer, you will be eligible to receive a tax receipt for your bulk donations made through the website.
+            Bill 104 is currently being passed through the Legislative Assembly of Ontario.  It aims to grant a tax credit for certain donations made to Ontario Food Banks by farmers.  By creating a Farm2Fork account listed as a farmer, you will be eligible to receive a tax receipt for your bulk donations made through the website.
         </p>
         <p>
             Please note that it is not certain that this bill will be passed.
