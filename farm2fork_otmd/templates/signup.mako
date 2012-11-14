@@ -75,7 +75,7 @@
                     <span class="help-inline">The password you provided is incorrect</span>
                 %else:
                     <input name="password" type="password" placeholder="Enter a Password">
-                    <span class="help-inline">Your must be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
+                    <span class="help-inline">Your password must be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
                 %endif
                 </div>
             </div>
