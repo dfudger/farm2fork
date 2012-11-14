@@ -25,7 +25,7 @@
                 <label class="control-label">Surname</label>
                 <div class="controls">
                     
-                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH") or form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="last_name" type="text" value="${form.last_name}">
                     %else:
                     <input name="last_name" type="text" placeholder="Enter your Surname">
