@@ -69,7 +69,7 @@
                 <div class="controls">
                 %if form.get("PASSWORD_INVALID"):
                     <input name="password" type="password" id="inputPassword">
-                    <span class="help-inline">The password you provided is invalid. It should be 8-20 characters long.</span>
+                    <span class="help-inline">The password you provided is does not meet our standards. It should be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
                 %elif form.get("PASSWORD_MISMATCH"):
                     <input name="password" type="password" id="inputPassword">
                     <span class="help-inline">The password you provided is incorrect</span>
