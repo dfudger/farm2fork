@@ -75,9 +75,6 @@
             view the requests and offer contributions.
         </p>
 
-        <p class="hidden-phone"></p>
-
-        <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
 

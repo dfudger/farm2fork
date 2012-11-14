@@ -10,11 +10,10 @@
     <div class="span4">
         <h3>Under Construction!</h3>
         <p>
-            This page is under construction. Someday this page will have things on it. That day is not today.
+            This page is under construction. Future implementation will provide proper functionality.
         </p>
     </div>
     <div class="span4">
-        <!--<h3>Under Construction!</h3>-->
         <p>
             <img src="/static/img/construction.jpg" alt="Farm2Fork logo">
         </p>
