@@ -6,7 +6,6 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
@@ -33,6 +32,22 @@
     </div>
 </div> <!-- End Row 1-->
 
+<!-- Buttons -->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="span4 donate_buttons">
+            ## TODO change button class to donate_button
+            <button class="button">Donate Food</button>
+        </div>
+        <div class="span4 donate_buttons">
+                <button class="button">Donate Time</button>
+        </div>
+        <div class="span4 donate_buttons">
+                <button class="button">Donate Money</button>
+        </div>
+    </div>
+</div> <!-- End Row 2 - Buttons-->
+
 <!-- About F2F Section -->
 <div class="row-fluid">
     <div class="span1 hidden-phone">
@@ -43,42 +58,23 @@
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
-                    <img src="/static/img/farmer.jpg" alt="">
-                    <small>I'm a farmer, hells yeah!</small>
+                    <img src="/static/img/farmer.jpg" alt="Image of a farmer.">
+                    <small>I'm a farmer!</small>
                 </div>
             </li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
+        <p>Farm2Fork is a project created with the intent of solving the problem of a lack of available fresh food from Emergency Food Providers (EFPs) by addressing the minimal amount of communication between them. Currently, there are times in which EFPs are either rejecting donations because of space limitations or when they simply do not have enough food to give out. There is a particular need for fresh vegetables or meat to facilitate a healthier lifestyle of those in need. The goal of this project is to meet these needs by bringing awareness to those in the community who would be willing to lend a hand through methods of donating goods, time and money.</p>
 
-        <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
+        <p class="hidden-phone"></p>
 
         <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
 
-<!-- Buttons -->
-<div class="row-fluid">
-    <div class="span6 offset2">
-        <p>
-            <button class="btn btn-large" type="button">Donate Food</button>
-            <button class="btn btn-large" type="button">Donate Time</button>
-            <button class="btn btn-large" type="button">Donate Money</button>
-        </p>
-    </div>
-</div> <!-- End Row 2 - Buttons-->
-
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+        <h3 id="loginModalLabel">Login to Farm2Fork</h3>
     </div>
     <div class="modal-body">
         <%include file="login.mako"/>

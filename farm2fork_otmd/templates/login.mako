@@ -1,5 +1,5 @@
 
-<form class="form-horizontal" action="/login">
+<form class="form-horizontal" action="/login" method="POST">
     %if not EMAIL_INVALID:
         <div class="control-group">
     %else:
