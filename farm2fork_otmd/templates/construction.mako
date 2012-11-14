@@ -13,6 +13,7 @@
             This page is under construction. Future implementation will provide proper functionality.
         </p>
     </div>
+
     <div class="span4">
         <p>
             <img src="/static/img/construction.jpg" alt="Farm2Fork logo">

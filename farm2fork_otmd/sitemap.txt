@@ -1,0 +1,24 @@
+/
+/home
+/profile/{username}
+/profile/modify/{username}
+/profile/deactivate/{username}
+/profile/receipt_req/{username}                 ##used to generate and send a verification request of donations to related foodbankprofile
+/profile/receipts/{username}                    ##user can view/download/print receipts that have been verified
+/foodbankprofile/{foodbank}
+/foodbankprofile/needs/{foodbank}
+/foodbankprofile/modify/{foodbank}              ##used to modify foodbank profile info/hours/forms
+/foodbankprofile/verify_donations/{foodbank}    ##used to generate verified receipts that users can then access
+/foodbankprofile/volunteer_form/{foodbank}      ##users can print or fill out electronic volunteer form here
+/about
+/signup
+/signup_complete
+/login
+/login/recover
+/construction
+/donate/food
+/donate/time
+/donate/money
+/needs_board
+/needs_board/update
+/needs_board/volunteer_forms_list
