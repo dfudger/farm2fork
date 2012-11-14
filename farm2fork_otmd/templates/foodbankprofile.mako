@@ -25,17 +25,9 @@
 
                     <div id="collapseOne" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="340" height="280" frameborder="0" 
-                                src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=43.524553~-80.213331&amp;sty=r&amp;draggable=false&amp;
-                                v=2&amp;dir=0&amp;form=LMLTEW&amp;mkt=en-ca&amp;emid=c922a74d-98a5-ff72-b4fe-c5c83766536a&amp;w=350&amp;h=280">
-                                </iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" 
-                                href="http://www.bing.com/maps/?cp=43.524553~-80.213331&amp;sty=h&amp;lvl=14&amp;where1=&amp;mm_embed=map&amp;
-                                form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" 
-                                href="http://www.bing.com/maps/?cp=43.524553~-80.213331&amp;sty=h&amp;lvl=14&amp;rtp=~pos.43.524553_-80.213331_&amp;
-                                mm_embed=dir&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a id="LME_birdsEye" 
-                                href="http://www.bing.com/maps/?cp=r7mpgn89g004&amp;sty=b&amp;lvl=18&amp;where1=&amp;mm_embed=be&amp;
-                                form=LMLTEW" target="_blank">View Bird's Eye</a></div>
-                            </div>
+                            <p>University Of Guelph</p>
+                            <p>100 Stone W, Guelph, ON N1H</p>
+                            <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="250" height="250" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=43.52824233524411~-80.22379115344238&amp;sty=r&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=University+of+Guelph%2C+ON&amp;form=LMLTEW&amp;pp=43.527889251708984~-80.22310638427734&amp;mkt=en-ca&amp;emid=a70d037b-321d-08f5-65cf-779043d20d9d&amp;w=250&amp;h=250"></iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=43.52824233524411~-80.22379115344238&amp;lvl=14&amp;sty=r&amp;where1=University+of+Guelph%2C+ON&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=43.52824233524411~-80.22379115344238&amp;rtp=~pos.43.527889251708984_-80.22310638427734_University+of+Guelph%2C+ON&amp;lvl=14&amp;sty=r&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;</div></div>
                         </div>
                     </div>
                 </div>
@@ -46,12 +38,10 @@
 
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <ul>
-                                <li>Head Coordinator: Jane Doe</li>
-                                <li>Phone: 519-226-1235</li>
-                                <li>Fax:   221-231-1422</li>
-                                <li><a href="mailto:test@example.com">Email: testfarm@example.com</a></li>
-                            </ul>
+                            <li>Head Coordinator: Jane Doe</li>
+                            <li>Phone: 519-226-1235</li>
+                            <li>Fax:   221-231-1422</li>
+                            <li><a href="mailto:test@example.com">Email: testfarm@example.com</a></li>
                         </div>
                     </div>
                 </div>
