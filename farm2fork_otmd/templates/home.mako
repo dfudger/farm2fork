@@ -6,11 +6,6 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-<div class="row-fluid"> 
-    <div class="span12">
-        <img style="height:40px" src="/static/img/logo1.png" alt="Farm2Fork logo">
-    </div>
-</div>
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
