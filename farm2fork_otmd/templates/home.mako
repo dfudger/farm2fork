@@ -64,17 +64,9 @@
                 </div>
             </li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
+        <p>Farm2Fork is a project created with the intent of solving the problem of a lack of available fresh food from Emergency Food Providers (EFPs) by addressing the minimal amount of communication between them. Currently, there are times in which EFPs are either rejecting donations because of space limitations or when they simply do not have enough food to give out. There is a particular need for fresh vegetables or meat to facilitate a healthier lifestyle of those in need. The goal of this project is to meet these needs by bringing awareness to those in the community who would be willing to lend a hand through methods of donating goods, time and money.</p>
 
-        <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum commodo enim, vel varius sem aliquam at. Donec egestas dapibus urna
-        id ultricies. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Vestibulum erat erat, auctor ac dapibus id,
-        semper eget dui.</p>
+        <p class="hidden-phone"></p>
 
         <small><a href="/about">more...</a></small>
     </div>
@@ -83,7 +75,7 @@
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="loginModalLabel">Login to Farm2fork</h3>
+        <h3 id="loginModalLabel">Login to Farm2Fork</h3>
     </div>
     <div class="modal-body">
         <%include file="login.mako"/>
