@@ -14,7 +14,7 @@
         <div class="span3">
             <!--Sidebar content-->
 
-            <h3>User Profile Example</h3>
+            <h3>${user.first_name}</h3>
             <img src="/static/img/user_sample.jpg" alt="">
 
             <div class="accordion" id="accordion2">
