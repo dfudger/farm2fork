@@ -13,16 +13,16 @@
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
-                <img src="/static/img/farm2.png" alt="test 1" />
+                <img src="/static/img/apples.jpg" alt="Apples" />
             </div>
             <div class="item">
-                <img src="/static/img/farm3.png" alt="test 2" />
+                <img src="/static/img/broccoli.jpg" alt="Broccoli" />
             </div>
             <div class="item">
-                <img src="/static/img/farm4.png" alt="test 3" />
+                <img src="/static/img/potatoes.jpg" alt="Potatoes" />
             </div>
             <div class="item">
-                <img src="/static/img/farm1.png" alt="test 3" />
+                <img src="/static/img/plums.png" alt="test 3" />
             </div>
           </div>
           <!-- Carousel nav -->
@@ -51,7 +51,7 @@
         </div>-->
         <div class="signupBtn hidden-phone">
             <h3>Sign Up</h3>
-            <p>Join the F2F Community!</p>
+            <p>Join the Farm2Fork Community!</p>
         </div>
     </div>
     <div class="span7">
