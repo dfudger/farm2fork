@@ -22,7 +22,7 @@
                 <img src="/static/img/potatoes.jpg" alt="Potatoes" />
             </div>
             <div class="item">
-                <img src="/static/img/plums.png" alt="test 3" />
+                <img src="/static/img/plums.jpg" alt="Plums" />
             </div>
           </div>
           <!-- Carousel nav -->
