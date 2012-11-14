@@ -37,6 +37,7 @@
     <div class="span12">
         <p id="buttonContainer">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
             <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
@@ -45,6 +46,11 @@
             <button class="button"><i class="icon-time icon-white"></i> Donate Time</button>
             <button class="button"><sup>$</sup> Donate Money</button>
 >>>>>>> 29a869437622c292a2cc05925d093bd89870aaf6
+=======
+            <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
+>>>>>>> 8b018048cde6c138a655946850dcfa4c7374cdd7
         </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
