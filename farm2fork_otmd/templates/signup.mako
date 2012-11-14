@@ -45,14 +45,14 @@
                     %endif
                 </div>
             </div>
-            %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+            %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Confirm Email</label>
                 <div class="controls">
-                    %if EMAIL_INVALID or EMAIL_MISMATCH or EMAIL_ALREADY_EXISTS:
+                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="con_email" type="text">
                     %else:
                     <input name="con_email" type="text" placeholder="Repeat your Email">
@@ -60,17 +60,17 @@
                 </div>
             </div>
 
-            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Password</label>
                 <div class="controls">
-                %if PASSWORD_INVALID:
+                %if form.get("PASSWORD_INVALID"):
                     <input name="password" type="password" id="inputPassword">
                     <span class="help-inline">The password you provided is invalid. It should be 8-20 characters long.</span>
-                %elif PASSWORD_MISMATCH:
+                %elif form.get("PASSWORD_MISMATCH"):
                     <input name="password" type="password" id="inputPassword">
                     <span class="help-inline">The password you provided is incorrect</span>
                 %else:
@@ -79,14 +79,14 @@
                 </div>
             </div>
 
-            %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+            %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
             <div class="control-group error">
             %else:
             <div class="control-group">
             %endif
                 <label class="control-label">Confirm Password</label>
                 <div class="controls">
-                    %if PASSWORD_INVALID or PASSWORD_MISMATCH:
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH"):
                     <input name="con_password" type="password">
                     %else:
                     <input name="con_password" type="password" placeholder="Repeat the same Password">
