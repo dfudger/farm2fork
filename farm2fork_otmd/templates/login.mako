@@ -44,8 +44,8 @@
 
 <hr>
 
-<div>
-    <p>Not a member of the Farm2Fork community yet?</p>
-    <a href="/signup" class="btn">Sign up for Farm2Fork</a>
+<div style="margin-bottom:20px;">
+    <a href="/signup">Not a member of the Farm2Fork community yet?</a>
+    <!-- <a href="/signup" class="btn">Sign up for Farm2Fork</a> -->
 </div>
 
