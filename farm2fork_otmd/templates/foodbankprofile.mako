@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- class span3 end -->
         
         <div class="span9">
             <!--Body content-->
@@ -69,25 +69,50 @@
                             <th>Monday</th>  
                             <th>Tuesday</th>  
                             <th>Wednesday</th>  
-                            <th>Thursday</th>  
-                            <th>Friday</th>  
-                            <th>Saturday</th>  
-                            <th>Sunday</th>     
                         </tr>  
                     </thead>
 
                     <tbody>  
                         <tr>  
-                            <td>12:00AM-12:00PM</td>
-                            <td>12:00AM-12:00PM</td> 
-                            <td>12:00AM-12:00PM</td>
-                            <td>12:00AM-12:00PM</td>
+                            
                             <td>12:00AM-12:00PM</td> 
                             <td>12:00AM-12:00PM</td>
                             <td>12:00AM-12:00PM</td>
                         </tr>  
                     </tbody>  
-                </table> 
+                </table>
+
+                <table class="table">
+                    <thead>  
+                        <tr> 
+                            <th>Thursday</th>  
+                            <th>Friday</th>  
+                            <th>Saturday</th>  
+                        </tr>  
+                    </thead>
+
+                    <tbody>  
+                        <tr>
+                            <td>12:00AM-12:00PM</td>
+                            <td>12:00AM-12:00PM</td> 
+                            <td>12:00AM-12:00PM</td>
+                        </tr>  
+                    </tbody>  
+                </table>
+
+                <table class="table">
+                    <thead>  
+                        <tr> 
+                            <th>Sunday</th>     
+                        </tr>  
+                    </thead>
+
+                    <tbody>  
+                        <tr>
+                            <td>12:00AM-12:00PM</td>
+                        </tr>  
+                    </tbody>  
+                </table>
                     
             </div>
 
@@ -99,6 +124,6 @@
                 </p>
             </div>
 
-        </div>
-    </div>
+        </div><!-- class span9 end -->
+    </div><!-- Row-fluid class end -->
 </div>
