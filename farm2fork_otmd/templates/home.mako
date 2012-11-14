@@ -6,7 +6,11 @@
     <h1 id="header_title">${title} <small>test</small></h1>
 </%block>
 
-
+<div class="row-fluid"> 
+    <div class="span12">
+        <img style="height:40px" src="/static/img/logo1.png" alt="Farm2Fork logo">
+    </div>
+</div>
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
@@ -35,8 +39,8 @@
 
 <!-- Buttons -->
 <div class="row-fluid">
-    <div class="span12 offset2">
-        <p>
+    <div class="span12">
+        <p id="buttonContainer">
             <button class="button">Donate Food</button>
             <button class="button">Donate Time</button>
             <button class="button">Donate Money</button>
@@ -54,8 +58,8 @@
         <ul class="thumbnails pull-left" id="farmer-pic">
             <li class="span12">
                 <div class="thumbnail">
-                    <img src="/static/img/farmer.jpg" alt="">
-                    <small>I'm a farmer, hells yeah!</small>
+                    <img src="/static/img/farmer.jpg" alt="Image of a farmer.">
+                    <small>I'm a farmer!</small>
                 </div>
             </li>
         </ul>
