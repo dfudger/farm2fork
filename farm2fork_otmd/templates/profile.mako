@@ -9,7 +9,7 @@
 
 <div class="row-fluid">
     <div class="span6">
-        <h3>Argument</h3>
+        <h1>${user.first_name}</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor laoreet
             massa in sodales. Integer cursus congue egestas. Cras lorem libero, dapibus et
