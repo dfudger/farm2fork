@@ -31,15 +31,19 @@
                             <%block name="navbar">
                                 <ul class="nav">
                                     <li><a href="/about">about</a></li>
-                                    <li><a href="/about">about</a></li>
-                                    <li><a href="/about">about</a></li>
+                                    <li><a href="/foodbank">foodbank</a></li>
+                                    <li><a href="/construction">needs</a></li>
+
                                 </ul>
                             </%block>
                             <ul class="nav pull-right">
-                                <li>
+                                
                                     % if user:
+                                    <li><a href="/profile">profile</a></li>
+                                    <li>
                                         <a href="/logout">logout</a>
                                     % else:
+                                    <li>
                                         <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
                                         <a href="/login" class="visible-phone">login/signup</a>
                                     % endif

@@ -49,6 +49,9 @@
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
+.aboutP p {
+    margin-bottom: 20px;
+}
 
 body {
     color:@dark;
@@ -166,6 +169,13 @@ h3 {
  
 }
 
+.button:hover {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45));
+    background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a);
+    border-top: solid 2px #b1432a;
+    border-bottom: solid 1px #e28d79;
+}
+
 a.brand {
     padding: 0 0px !important;
 }
@@ -173,8 +183,13 @@ a.brand {
 .signupBtn {
  
     /*basic styles*/
-    width: 250px;  height: 50px;  color: white; background-color: #99CF00;
-    text-align: center;  font-size: 30px;  line-height: 50px;
+    width: 240px;  
+    //height: 70px;  
+    color: white; 
+    background-color: #AFC32E;
+    text-align: center;  
+    font-size: 30px;  
+    line-height: 50px;
  
  
     /*gradient styles*/
@@ -202,14 +217,15 @@ a.brand {
 }
  
 .signupBtn p {
-    font-size: 12px;
-    line-height: 4px;
+    font-size: 16px;
+    line-height: 12px;
     font-family: helvetica, sans-serif;
 }
  
 .signupBtn a {
     text-decoration: none;
-    color: fff;
+    color: #fff !important;
+    font-size: 18px;
 }
  
 .signupBtn:hover {

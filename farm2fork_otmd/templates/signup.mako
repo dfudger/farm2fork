@@ -14,8 +14,8 @@
             <div class="control-group">
                 <label class="control-label">Given Name</label>
                 <div class="controls">
-                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
-                    <input name="last_name" type="text" value="${form.last_name}">
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH") or form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    <input name="first_name" type="text" value="${form.first_name}">
                     %else:
                     <input name="first_name" type="text" placeholder="Enter your Given Name">
                     %endif
@@ -25,7 +25,7 @@
                 <label class="control-label">Surname</label>
                 <div class="controls">
                     
-                    %if form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
+                    %if form.get("PASSWORD_INVALID") or form.get("PASSWORD_MISMATCH") or form.get("EMAIL_INVALID") or form.get("EMAIL_MISMATCH") or form.get("EMAIL_ALREADY_EXISTS"):
                     <input name="last_name" type="text" value="${form.last_name}">
                     %else:
                     <input name="last_name" type="text" placeholder="Enter your Surname">
@@ -108,24 +108,23 @@
                 <div class="controls">
                     <label class="checkbox inline">
                         <input name="farmer_box" id="farmerCheckbox" type="checkbox"> Are you a farmer?
+                        <a href="#farmerModal" role="button" data-toggle="modal">
+                            Why do we ask?
+                        </a>
                     </label>
-                    <a href="#farmerModal" role="button" class="btn btn-small inline" data-toggle="modal">
-                        Why do we ask?
-                    </a>
                 </div>
             </div>
 
             <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
-                        <input type="checkbox"> I would like to receive a newsletter from Farm2Fork
+                        <input name="newsletter_box" type="checkbox"> I would like to receive a newsletter from Farm2Fork
                     </label>
                 </div>
             </div>
 
             <div class="control-group">
                 <div class="controls">
-                    ##<label onclick="$('#signup_button').attr('disabled', 'disabled');" class="checkbox">
                     <label class="checkbox">
                         <input name="tos_box" id="tosCheckbox" type="checkbox"> I agree to the 
                         <a href="#tosModal" role="button" data-toggle="modal">

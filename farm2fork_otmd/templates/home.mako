@@ -13,16 +13,16 @@
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
-                <img src="/static/img/farm2.png" alt="test 1" />
+                <img src="/static/img/apples.jpg" alt="Apples" />
             </div>
             <div class="item">
-                <img src="/static/img/farm3.png" alt="test 2" />
+                <img src="/static/img/broccoli.jpg" alt="Broccoli" />
             </div>
             <div class="item">
-                <img src="/static/img/farm4.png" alt="test 3" />
+                <img src="/static/img/potatoes.jpg" alt="Potatoes" />
             </div>
             <div class="item">
-                <img src="/static/img/farm1.png" alt="test 3" />
+                <img src="/static/img/plums.jpg" alt="Plums" />
             </div>
           </div>
           <!-- Carousel nav -->
@@ -36,9 +36,11 @@
 <div class="row-fluid">
     <div class="span12">
         <p id="buttonContainer">
-            <button class="button"><i class="icon-shopping-cart icon-white"></i> Donate Food</button>
-            <button class="button"><i class="icon-time icon-white"></i> Donate Time</button>
-            <button class="button"><sup>$</sup> Donate Money</button>
+
+            <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
+
         </p>
     </div>
 </div> <!-- End Row 2 - Buttons-->
@@ -50,8 +52,8 @@
             <p>Signup!</p>
         </div>-->
         <div class="signupBtn hidden-phone">
-            <h3>Sign Up</h3>
-            <p>Join the F2F Community!</p>
+            <a href="/signup"><h3>Sign Up</h3>
+            <p>Join the Farm2Fork Community!</p></a>
         </div>
     </div>
     <div class="span7">
@@ -65,7 +67,7 @@
                 </div>
             </li>
         </ul>
-        <p>
+        <p id="aboutP">
             Farm2Fork is a project created to ease communication between Emergency Food
             Providers (EFPs) and members of their local community.  Currently, there are
             times in which EFPs are having to reject donations because of storage
@@ -75,9 +77,6 @@
             view the requests and offer contributions.
         </p>
 
-        <p class="hidden-phone"></p>
-
-        <small><a href="/about">more...</a></small>
     </div>
 </div> <!-- End Row -->
 

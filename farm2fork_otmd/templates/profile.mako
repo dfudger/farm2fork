@@ -1,75 +1,52 @@
 
 <%inherit file="base.mako"/>
 
-<%block name="page_title">farm2fork - ${title} of ${username}</%block>
+<%block name="page_title">farm2fork - ${user.first_name}</%block>
 
 <%block name="header">
-    <h1 id="header_title">${title} <small>${username}</small></h1>
+    <h1 id="header_title">${user.first_name}</h1>
 </%block>
 
-<%block name="navbar">
-    <ul class="nav">
-        <li class="active"><a href="/profile/douglas">douglas' profile</a></li>
-    </ul>
-</%block>
 
-<div class="row-fluid">
-    <div class="span6">
-        <h3>Argument</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor laoreet
-            massa in sodales. Integer cursus congue egestas. Cras lorem libero, dapibus et
-            condimentum at, facilisis eu eros. Proin in nisi metus, at mattis odio. Nam
-            elementum laoreet pellentesque. Maecenas dictum dui nunc, id condimentum dui.
-            Duis ullamcorper tincidunt risus, ut porta orci ultricies ac. Sed venenatis
-            tempus tortor non malesuada. Donec dapibus euismod quam, vel consectetur dolor
-            malesuada eu. Sed felis ante, lobortis eu lobortis vel, tempus in sem. Ut
-            volutpat ligula eget lorem laoreet iaculis. Fusce non pellentesque orci.
-            Curabitur egestas, erat nec placerat ullamcorper, ligula lorem bibendum justo,
-            a feugiat leo nunc et mi. Aliquam vitae ante eget turpis ornare rutrum. Nam a
-            massa mi.
+<!-- User Profile -->
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <!--Sidebar content-->
 
-            Nam consectetur accumsan sapien id fringilla. Nullam aliquet ligula id dolor
-            ullamcorper tristique. Cras eget felis dolor. Phasellus velit velit, rutrum et
-            mattis lacinia, pharetra mattis erat. Suspendisse potenti. Maecenas metus nunc,
-            pulvinar at semper nec, fringilla ut enim. Ut facilisis sollicitudin sem, et
-            vestibulum sapien interdum sed. Proin ac interdum nunc. In feugiat libero quis
-            dolor imperdiet iaculis. Maecenas nec nunc mi. Fusce purus sapien, tincidunt et
-            suscipit quis, feugiat laoreet metus. Sed pulvinar est quis odio mollis
-            aliquam. Mauris ornare semper enim, sed viverra elit lacinia eget.
+            <h3>${user.first_name} ${user.last_name}</h3>
+            <img src="/static/img/user_sample.jpg" alt="">
 
-            Nullam eu quam vitae lacus blandit euismod vel ac mi. Aliquam posuere volutpat
-            metus, at convallis felis sodales non. Donec sit amet arcu nec metus
-            consectetur gravida. Quisque hendrerit mi ut arcu blandit mollis non non justo.
-            Vestibulum eget ultrices velit. Sed euismod. 
-        </p>
-    </div>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <h5><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Contact...</a></h5>
+                    </div>
 
-    <div class="span6">
-        <h3>Rebuttle</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in est
-            tellus. Nulla feugiat commodo nulla quis volutpat. Sed tincidunt viverra
-            ultrices. Phasellus rutrum, metus et rutrum tincidunt, tortor nunc auctor
-            nulla, eget vehicula lorem urna sit amet justo. Sed nec tellus vitae risus
-            porta vehicula vel et metus. Etiam pharetra aliquet venenatis. Donec ultricies
-            hendrerit dolor ut sollicitudin. Donec eros augue, aliquet ac feugiat at,
-            pharetra id magna. Ut ultrices tempus nibh, quis ullamcorper urna ornare a.
-            Praesent sollicitudin urna ut mi egestas a lobortis nisi eleifend. Nulla sed
-            sem sed ante dignissim tristique. Aliquam sagittis, lorem egestas condimentum
-            ullamcorper, odio risus sodales odio, cursus tempus mauris tortor sit amet
-            elit.
-
-            Nunc et erat ante. Aenean id auctor mauris. Vestibulum et ultricies nulla.
-            Integer sit amet nulla quis lacus porttitor sagittis. Aliquam vitae mollis
-            turpis. Proin placerat felis in turpis euismod aliquet mollis nisl consectetur.
-            Donec nisi tellus, viverra ut varius vitae, mattis quis ligula. Quisque eget
-            nulla eu sapien adipiscing mollis. Quisque porta justo aliquam est dapibus sed
-            fermentum quam vehicula.
-
-            Morbi malesuada, nisl eget congue consectetur, diam eros sodales dui,
-            pellentesque adipiscing urna mauris eget orci. Fusce lobortis posuere turpis at
-            interdum. Phasellus gravida commodo nunc non.
-        </p>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            <li>Volunteer: ${user.first_name} ${user.last_name}</li>
+                            <li>Phone: 519-226-1235</li>
+                            <li>Fax:   221-231-1422</li>
+                            <li><a href="mailto:${user.email}">Email:${user.email}</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="span9">
+            <!--Body content-->
+            <div>
+                <h3>About Me</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh 
+                    elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus 
+                    sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+                    Class aptent taciti sociosq.
+                </p>
+            </div>
+        </div>
     </div>
 </div>

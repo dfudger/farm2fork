@@ -1,34 +1,53 @@
 
 <form class="form-horizontal" action="/login" method="POST">
-    %if form.get("EMAIL_INVALID"):
+    %if form:
+        %if form.get("EMAIL_INVALID"):
         <div class="control-group error">
-    %else:
+        %else:
         <div class="control-group">
+        %endif
+    %else:
+    <div class="control-group">
     %endif
         <label class="control-label" for="inputEmail">Email</label>
         <div class="controls">
-            %if form.get("EMAIL_INVALID"):
+            %if form:
+                %if form.get("EMAIL_INVALID"):
                 <input name="email" type="text" id="inputEmail">
                 <span class="help-inline">This email is invalid</span>
-            %else:
+                %elif form.get("NOT_VERIFIED"):
+                <input name="email" type="text" id="inputEmail" value="${form.email}">
+                <span class="help-inline">You must verify your account before you can login</span>
+                %else:
                 <input name="email" type="text" id="inputEmail" placeholder="Email">
+                %endif
+            %else:
+            <input name="email" type="text" id="inputEmail" placeholder="Email">
             %endif
             
         </div>
     </div>
     
-    %if form.get("PASSWORD_INVALID"):
+    %if form:
+        %if form.get("PASSWORD_INVALID"):
         <div class="control-group error">
-    %else:
+        %else:
         <div class="control-group">
+        %endif
+    %else:
+    <div class="control-group">
     %endif
         <label class="control-label" for="inputPassword">Password</label>
         <div class="controls">
-            %if form.get("PASSWORD_INVALID"):
+            %if form:
+                %if form.get("PASSWORD_INVALID"):
                 <input name="password" type="password" id="inputPassword">
                 <span class="help-inline">The password you provided is incorrect</span>
-            %else:
+                %else:
                 <input name="password" type="password" id="inputPassword" placeholder="Password">
+                %endif
+            %else:
+            <input name="password" type="password" id="inputPassword" placeholder="Password">
             %endif
         </div>
     </div>
