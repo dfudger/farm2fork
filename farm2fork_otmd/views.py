@@ -132,6 +132,12 @@ def profile(request):
     return {}
 
 
+@view_config(route_name='foodbankprofile', renderer='foodbankprofile.mako')
+@add_title('Foodbank Profile')
+@include_user
+def profile(request):
+    return {}
+
 @view_config(route_name='construction', renderer='construction.mako')
 @add_title('Construction')
 @include_user

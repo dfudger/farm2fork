@@ -68,7 +68,8 @@ class SignupForm(Form):
                         self.email):
             raise FormValidationError('EMAIL_INVALID')
 
-        user = DBSession.query(User).filter_by(email=self.email).first()
+        #user = DBSession.query(User).filter_by(email=self.email).first()
+        user = {}
         if user:
             raise FormValidationError('EMAIL_ALREADY_EXISTS')
 
@@ -111,8 +112,7 @@ class SignupForm(Form):
     def dispatch_verify_email(self):
         if not getattr(self, 'user', None):
             return
-
-        EmailVerificationTask().delay(self.user)
+        #EmailVerificationTask().delay(self.user)
 
 
 class LoginForm(Form):
@@ -132,13 +132,15 @@ class LoginForm(Form):
     def validate_password(self):
         password = hashlib.sha512(self.password).hexdigest()
 
-        user = DBSession.query(User).filter_by(email=self.email).first()
+        #user = DBSession.query(User).filter_by(email=self.email).first()
+        user = {}
         if user:
             if password != user.password:
                 raise FormValidationError('PASSWORD_INVALID')
 
     def clean(self):
-        user = DBSession.query(User).filter_by(email=self.email).first()
+        #user = DBSession.query(User).filter_by(email=self.email).first()
+        user = {}
         if user:
             if not user.is_active:
                 raise FormValidationError('NOT_ACTIVE')
@@ -146,5 +148,6 @@ class LoginForm(Form):
                 raise FormValidationError('NOT_VERIFIED')
 
     def get_user(self):
-        user = DBSession.query(User).filter_by(email=self.email).first()
+        #user = DBSession.query(User).filter_by(email=self.email).first()
+        user = {}
         return user.user_id
