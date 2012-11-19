@@ -124,7 +124,8 @@ class LoginForm(Form):
                         self.email):
             raise FormValidationError('EMAIL_INVALID')
 
-        user = DBSession.query(User).filter_by(email=self.email).first()
+        #user = DBSession.query(User).filter_by(email=self.email).first()
+        user = {}
         if not user:
             raise FormValidationError('EMAIL_INVALID')
 
