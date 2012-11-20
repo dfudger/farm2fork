@@ -179,7 +179,7 @@ class User(Base):
     email = Column(VARCHAR(45), nullable=False)
     password = Column(VARCHAR(256), nullable=False)
     """
-        password for user\n
+        password for user
     """
 
     verification_key = Column(VARCHAR(45), nullable=False)

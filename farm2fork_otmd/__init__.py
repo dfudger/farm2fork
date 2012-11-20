@@ -3,7 +3,7 @@ from pyramid.config import Configurator
 from pyramid.authentication import AuthTktAuthenticationPolicy
 from pyramid.authorization import ACLAuthorizationPolicy
 
-from farmtofork.security import groupfinder
+#from farmtofork.security import groupfinder
 
 from .models import (
     DBSession,
