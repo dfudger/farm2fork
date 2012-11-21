@@ -10,7 +10,7 @@
             to "finity123"
         </p>
         <p>
-            When you are ready to reset your password 
+            When you are ready to reset your password
             <a href="http://131.104.49.207:6543/password_recovery/${password_recovery_key}">click here</a>.
         </p>
         <p>
