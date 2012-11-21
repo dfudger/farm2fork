@@ -1,1 +1,1 @@
-Farm2Fork email verification
+Farm2Fork Verification
