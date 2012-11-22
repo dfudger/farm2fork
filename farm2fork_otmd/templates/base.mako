@@ -125,6 +125,9 @@
         <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/static/js/less.js" type="text/javascript"></script>
         <script src="/static/js/script.js" type="text/javascript"></script>
+        ##<script src="https://www.google.com/recaptcha/api/challenge?k=YOUR_PUBLIC_KEY" type="text/javascript">
+        
+        ##</script>
     </body>
 
 
