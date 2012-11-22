@@ -56,11 +56,12 @@
                                         <input type="text" class="span12" placeholder="amount" id="amount">
                                         <span class="help-block">I pledge to donate this many units.</span>
                                         % if not user:
-                                            <input type="text" class="span12" placeholder="email" id="email">\
+                                            <input type="text" class="span12" placeholder="email" id="email">
                                         % else:
                                             <input type="hidden" id="email" value="${user.email}">
                                         % endif
                                         <div class="form-actions">
+                                            <input type="hidden" id="need_id" value"${need['id']}">
                                             <button type="submit" class="btn">submit</button>
                                             <button type="button" class="btn">cancel</button>
                                         </div>
