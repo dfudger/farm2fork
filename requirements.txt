@@ -32,3 +32,4 @@ wsgiref==0.1.2
 zope.deprecation==4.0.0
 zope.interface==4.0.1
 zope.sqlalchemy==0.7.1
+recaptcha-client==1.0.6

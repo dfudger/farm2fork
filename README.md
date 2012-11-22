@@ -62,6 +62,19 @@ When I am working on this I have one terminal that I use for running the server
 and one that I use for running tests and the like. But do whatever works for
 you.
 
+## ReCAPTCHA
+
+So we are using reCAPTCHA for password recovery. Todo use reCaptcha we aquired
+some keys for it.  I is unlikely that you will have to use them but fyi they
+are:
+
+Public key:
+6LcPddkSAAAAAHS1m8sXBr9uqoO2_4GCAyuYr2Fx 
+
+Private key:
+6LcPddkSAAAAAAv3FYqBs7s2zAMvVF5mAM41o16h
+
+
 ## Resources
 
 Here are some places where some very useful information can be found:
