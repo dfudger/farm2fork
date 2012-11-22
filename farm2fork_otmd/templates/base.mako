@@ -31,7 +31,7 @@
                             <%block name="navbar">
                                 <ul class="nav">
                                     <li><a href="/about">about</a></li>
-                                    <li><a href="/foodbank">foodbank</a></li>
+                                    <li><a href="/foodbank">foodbanks</a></li>
                                     <li><a href="/needs">needs</a></li>
 
                                 </ul>
