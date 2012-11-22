@@ -179,22 +179,23 @@ def needs(request):
     response_dict = dict()
     foodbanks = [
         {
+            'id': 1,
             'name':'Foodbank1',
             'needs':[
                 {
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
@@ -202,22 +203,23 @@ def needs(request):
                 }
             ]
         },{
+            'id': 2,
             'name':'Foodbank2',
             'needs':[
                 {
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
@@ -225,22 +227,23 @@ def needs(request):
                 }
             ]
         },{
+            'id': 3,
             'name':'Foodbank3',
             'needs':[
                 {
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
@@ -248,22 +251,23 @@ def needs(request):
                 }
             ]
         },{
+            'id': 4,
             'name':'Foodbank4',
             'needs':[
                 {
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
@@ -271,22 +275,24 @@ def needs(request):
                 }
             ]
         },{
+            'id': 5,
             'name':'Foodbank5',
             'needs':[
                 {
+                    'id':1,
                     'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
                     'is_refrigerated':False
                 },{
-                    'item_title':'25 lbs vegetables root',
+                    'id':1,'item_title':'25 lbs vegetables root',
                     'description':'preferably potatoes, but yams are okay!',
                     'category_type':'fruit and vegetables',
                     'is_perishable':True,
