@@ -146,12 +146,6 @@ def profile(request):
 def construction(request):
     return {}
 
-@view_config(route_name='needs', renderer='needs.mako')
-@add_title('List of Needs')
-@include_user
-
-
-
 @view_config(route_name='password_recovery', renderer='password_recovery.mako')
 @add_title('Password Recovery')
 def password_recovery(request):
@@ -175,6 +169,9 @@ def password_recovery(request):
         return { "recaptcha_body": captcha.displayhtml(captcha_public_key) }
     return {}
 
+@view_config(route_name='needs', renderer='needs.mako')
+@add_title('List of Needs')
+@include_user
 def needs(request):
     response_dict = dict()
     foodbanks = [
