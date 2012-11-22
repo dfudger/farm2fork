@@ -38,5 +38,6 @@ def main(global_config, **settings):
     config.add_route('verify', '/verify/{verification_key}')
     config.add_route('construction', '/construction')
     config.add_route('needs', '/needs')
+    config.add_route('password_recovery', '/password_recovery')
     config.scan()
     return config.make_wsgi_app()

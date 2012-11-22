@@ -2,6 +2,8 @@ from pyramid.response import Response
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.httpexceptions import HTTPFound
 
+from recaptcha.client import captcha
+
 #from sqlalchemy.exc import DBAPIError
 
 from .models import (
@@ -148,4 +150,28 @@ def construction(request):
 @add_title('List of Needs')
 @include_user
 def needs(request):
+    return {}
+
+@view_config(route_name='password_recovery', renderer='password_recovery.mako')
+@add_title('Password Recovery')
+def password_recovery(request):
+    captcha_public_key  = "6LcPddkSAAAAAHS1m8sXBr9uqoO2_4GCAyuYr2Fx"
+    captcha_private_key = "6LcPddkSAAAAAAv3FYqBs7s2zAMvVF5mAM41o16h"
+    if request.method == 'POST':
+        response = captcha.submit(
+        request.args['recaptcha_challenge_field'],
+        request.args['recaptcha_response_field'],
+        captcha_private_key,
+        request.remote_addr,
+        ) 
+        if response.is_valid():
+            pass
+        else:
+            pass
+    else:
+        #data['recaptcha_javascript'] = captcha.displayhtml(captcha_public_key)
+        #data['recaptcha_theme'] = self.theme
+        #return { "recaptcha_body": data}
+        return { "recaptcha_body": captcha.displayhtml(captcha_public_key) }
+
     return {}
