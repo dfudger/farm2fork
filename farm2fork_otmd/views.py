@@ -144,3 +144,8 @@ def profile(request):
 def construction(request):
     return {}
 
+@view_config(route_name='needs', renderer='needs.mako')
+@add_title('List of Needs')
+@include_user
+def needs(request):
+    return {}

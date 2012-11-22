@@ -32,7 +32,7 @@
                                 <ul class="nav">
                                     <li><a href="/about">about</a></li>
                                     <li><a href="/foodbank">foodbank</a></li>
-                                    <li><a href="/construction">needs</a></li>
+                                    <li><a href="/needs">needs</a></li>
 
                                 </ul>
                             </%block>

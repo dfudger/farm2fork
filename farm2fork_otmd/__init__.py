@@ -37,5 +37,6 @@ def main(global_config, **settings):
     config.add_route('signup_complete', '/signup/submission')
     config.add_route('verify', '/verify/{verification_key}')
     config.add_route('construction', '/construction')
+    config.add_route('needs', '/needs')
     config.scan()
     return config.make_wsgi_app()
