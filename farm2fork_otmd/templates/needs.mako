@@ -10,22 +10,75 @@
         <h1>List of Needs</h1>
     </div>
     <div class="span6">
-        <form class="form-search pull-right">
+        <form class="form-search pull-right" method="post">
           <div class="input-prepend input-append row-fluid">
-            <select class="input-medium">
-                <option>All Foodbanks</option>
-                <option>Foodbank1</option>
-                <option>Foodbank2</option>
-                <option>Foodbank3</option>
-                <option>Foodbank4</option>
+            <select class="input-medium" id="search_foodbank">
+                <option value="all">All Foodbanks</option>
+                 % if foodbanks:
+                    % for entry in foodbanks:
+                        <option value="${entry['name']}">${entry['name']}</option>
+                    % endfor
+                % endif
             </select>
-            <input type="text" class="input-medium" placeholder="search criteria...">
+            <input type="text" class="input-medium" placeholder="search criteria..." id="search_criteria">
             <button type="submit" class="btn">Search</button>
           </div>
         </form>
     </div>
 </div>
 <div class="row-fluid">
+    % if foodbanks:
+        <% i = 1 %>
+        % for entry in foodbanks:
+            % if (i) % 2:
+                </div>
+                <div class="row-fluid">
+            % endif
+            <div class="span6">
+                <h2><a href="#">${entry['name']}</a></h2>
+                <div class="accordion" id="accordionF${i}">
+                    <% j = 1 %>
+                    % for need in entry['needs']:
+                      <div class="accordion-group">
+                        <div class="accordion-heading">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionF${i}" href="#collapseF${i}N${j}">
+                            ${need['item_title']}
+                          </a>
+                        </div>
+                        <div id="collapseF${i}N${j}" class="accordion-body collapse">
+                          <div class="accordion-inner">
+                            <div class="row-fluid">
+                                <div class="span5">
+                                    <p>${need['description']}</p>
+                                </div>
+                                <div class="span7">
+                                    <form class="form-inline" id="submit_pledge">
+                                        <input type="text" class="span12" placeholder="amount" id="amount">
+                                        <span class="help-block">I pledge to donate this many units.</span>
+                                        % if not user:
+                                            <input type="text" class="span12" placeholder="email" id="email">
+                                        % else:
+                                            <input type="hidden" id="email" value="${user.email}">
+                                        % endif
+                                        <div class="form-actions">
+                                            <input type="hidden" id="need_id" value"${need['id']}">
+                                            <button type="submit" class="btn">submit</button>
+                                            <button type="button" class="btn">cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <% j = j + 1 %>
+                    % endfor
+                </div>
+            </div>
+            <% i = i + 1 %>
+        % endfor
+    % endif
+    <!--
     <div class="span6">
         <h2><a href="#">Foodbank1</a></h2>
         <div class="accordion" id="accordionF1">
@@ -71,8 +124,8 @@
           </div>
         </div>
     </div>
+    
     <div class="span6">
-        <!-- REPEAT -->
         <h2>Foodbank2</h2>
         <div class="accordion" id="accordionF2">
           <div class="accordion-group">
@@ -113,5 +166,5 @@
 </div>
 <div class="row-fluid">
     <div class="span6"><h2>Foodbank3</h3></div>
-    <div class="span6"><h2>Foodbank4</h3></div>
+    <div class="span6"><h2>Foodbank4</h3></div>-->
 </div>
