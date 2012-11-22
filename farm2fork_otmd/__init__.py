@@ -20,7 +20,7 @@ def main(global_config, **settings):
     authz_policy = ACLAuthorizationPolicy()
     #Base.metadata.bind = engine
     config = Configurator(settings=settings,
-                          root_factory='farmtofork.models.RootFactory')
+                          root_factory='.models.RootFactory')
     config.set_authentication_policy(authn_policy)
     config.set_authorization_policy(authz_policy)
     config.include('pyramid_celery')
