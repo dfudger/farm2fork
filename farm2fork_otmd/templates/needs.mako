@@ -35,7 +35,7 @@
 <div class="row-fluid">
     % if food_banks:
         <% i = 1 %>
-        % for pantry, requests in food_banks.items():
+        % for pantry, request in food_banks:
             % if (i) % 2:
                 </div>
                 <div class="row-fluid">
