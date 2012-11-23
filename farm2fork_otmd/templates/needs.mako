@@ -12,44 +12,50 @@
     <div class="span6">
         <form class="form-search pull-right" method="post">
           <div class="input-prepend input-append row-fluid">
-            <select class="input-medium" id="search_foodbank">
-                <option value="all">All Foodbanks</option>
-                 % if foodbanks:
-                    % for entry in foodbanks:
-                        <option value="${entry['name']}">${entry['name']}</option>
+              <select class="input-medium" id="food_bank">
+                <option value="">All Foodbanks</option>
+                % if food_banks_names:
+                     % for id, fb_name in food_banks_names.items():
+                         <option value="${id}"
+                         %if form.get('food_bank') == id :
+                             selected
+                         %endif
+                         >
+                             ${fb_name}
+                        </option>
                     % endfor
                 % endif
             </select>
-            <input type="text" class="input-medium" placeholder="search criteria..." id="search_criteria">
+            <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
             <button type="submit" class="btn">Search</button>
           </div>
         </form>
     </div>
 </div>
 <div class="row-fluid">
-    % if foodbanks:
+    % if food_banks:
         <% i = 1 %>
-        % for entry in foodbanks:
+        % for food_bank, requests in food_banks.items():
             % if (i) % 2:
                 </div>
                 <div class="row-fluid">
             % endif
             <div class="span6">
-                <h2><a href="#">${entry['name']}</a></h2>
+                <h2><a href="#">${food_bank}</a></h2>
                 <div class="accordion" id="accordionF${i}">
                     <% j = 1 %>
-                    % for need in entry['needs']:
+                    % for request in requests:
                       <div class="accordion-group">
                         <div class="accordion-heading">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionF${i}" href="#collapseF${i}N${j}">
-                            ${need['item_title']}
+                              ${request.quantity} ${request.item.item_title}
                           </a>
                         </div>
                         <div id="collapseF${i}N${j}" class="accordion-body collapse">
                           <div class="accordion-inner">
                             <div class="row-fluid">
                                 <div class="span5">
-                                    <p>${need['description']}</p>
+                                    <p>${request.item.description}</p>
                                 </div>
                                 <div class="span7">
                                     <form class="form-inline" id="submit_pledge">
