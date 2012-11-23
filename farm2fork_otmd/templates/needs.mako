@@ -35,13 +35,13 @@
 <div class="row-fluid">
     % if food_banks:
         <% i = 1 %>
-        % for food_bank, requests in food_banks.items():
+        % for pantry, requests in food_banks.items():
             % if (i) % 2:
                 </div>
                 <div class="row-fluid">
             % endif
             <div class="span6">
-                <h2><a href="#">${food_bank}</a></h2>
+                <h2><a href="provider/${pantry.pantry_id}">${pantry.name}</a></h2>
                 <div class="accordion" id="accordionF${i}">
                     <% j = 1 %>
                     % for request in requests:
