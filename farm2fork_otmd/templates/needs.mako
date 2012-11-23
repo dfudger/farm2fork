@@ -14,8 +14,8 @@
           <div class="input-prepend input-append row-fluid">
               <select class="input-medium" id="food_bank">
                 <option value="">All Foodbanks</option>
-                % if food_banks_names:
-                     % for id, fb_name in food_banks_names.items():
+                % if food_bank_names:
+                     % for id, fb_name in food_bank_names.items():
                          <option value="${id}"
                          %if form.get('food_bank') == id :
                              selected
@@ -35,7 +35,7 @@
 <div class="row-fluid">
     % if food_banks:
         <% i = 1 %>
-        % for pantry, request in food_banks:
+        % for pantry, requests in food_banks:
             % if (i) % 2:
                 </div>
                 <div class="row-fluid">
@@ -67,7 +67,7 @@
                                             <input type="hidden" id="email" value="${user.email}">
                                         % endif
                                         <div class="form-actions">
-                                            <input type="hidden" id="need_id" value"${need['id']}">
+                                            <input type="hidden" id="need_id">
                                             <button type="submit" class="btn">submit</button>
                                             <button type="button" class="btn">cancel</button>
                                         </div>
