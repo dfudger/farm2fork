@@ -17,5 +17,7 @@
                 <p>
                     ${food_bank.address}
                 </p>
+            %endfor
+        %endif
     </div>
 </div>
