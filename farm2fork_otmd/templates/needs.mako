@@ -20,7 +20,7 @@
                          %if form.get('food_bank') == id :
                              selected
                          %endif
-                         >
+                         >  <!-- End of option -->
                              ${fb_name}
                         </option>
                     % endfor
