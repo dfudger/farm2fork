@@ -14,10 +14,10 @@
           <div class="input-prepend input-append row-fluid">
               <select class="input-medium" id="food_bank">
                 <option value="">All Foodbanks</option>
-                % if food_banks_names and form:
+                % if food_banks_names:
                      % for id, fb_name in food_banks_names.items():
                          <option value="${id}"
-                         %if form.get('food_bank') == id :
+                         %if form && form.get('food_bank') == id :
                              selected
                          %endif
                          >  <!-- End of option -->
