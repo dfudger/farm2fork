@@ -6,7 +6,7 @@
         ## ${recaptcha_body | n}
         <h1>Password Recovery</h1>
         ## TODO display an error if the email is valid but not in the system?
-        <form class="form-horizontal" method="POST">
+        <form class="form-horizontal" action="/password/recovery/sucess" method="POST">
             <div class="control-group">
                 <label class="control-label" for="inputEmail">Email</label>
                 <div class="controls">

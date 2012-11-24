@@ -70,7 +70,7 @@
         <div class="controls">
             <hr />
 
-            <a class="btn" href="/password_recovery">Forget your password?</a>
+            <a class="btn" href="/password/recovery">Forget your password?</a>
         </div>
     </div>  
 </form>
