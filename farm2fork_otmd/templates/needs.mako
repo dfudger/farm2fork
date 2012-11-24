@@ -26,7 +26,9 @@
                     % endfor
                 % endif
             </select>
-            <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
+            % if form.get:
+              <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
+            % endif
             <button type="submit" class="btn">Search</button>
           </div>
         </form>
