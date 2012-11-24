@@ -15,14 +15,12 @@
               <select class="input-medium" name="food_bank">
                 <option value="">All Foodbanks</option>
                 % if food_banks_names:
-                     % for id, fb_name in food_banks_names.items():
+                    % for id, fb_name in food_bank_names.items():
                          <option value="${id}"
                          %if form.get('food_bank') == id :
                              selected
                          %endif
-                         >  <!-- End of option -->
-                             ${fb_name}
-                        </option>
+                         > ${fb_name} </option>
                     % endfor
                 % endif
             </select>
