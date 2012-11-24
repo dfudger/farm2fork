@@ -12,12 +12,12 @@
     <div class="span6">
         <form class="form-search pull-right" method="post">
           <div class="input-prepend input-append row-fluid">
-              <select class="input-medium" id="food_bank">
+              <select class="input-medium" name="food_bank">
                 <option value="">All Foodbanks</option>
                 % if food_banks_names:
                      % for id, fb_name in food_banks_names.items():
                          <option value="${id}"
-                         %if form && form.get('food_bank') == id :
+                         %if form.get('food_bank') == id :
                              selected
                          %endif
                          >  <!-- End of option -->
@@ -27,7 +27,7 @@
                 % endif
             </select>
             % if form.get:
-              <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
+                <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" name="item">
             % endif
             <button type="submit" class="btn">Search</button>
           </div>
