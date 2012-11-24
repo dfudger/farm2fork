@@ -2,7 +2,7 @@
 <%inherit file="base.mako"/>
 
 <div class="row-fluid">
-    <div class="span">
+    <div class="span12">
         <h1>Food Providers</h1>
         <p>
             Here are all of the food providers

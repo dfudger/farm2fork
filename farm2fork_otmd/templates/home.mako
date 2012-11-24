@@ -9,7 +9,7 @@
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
-        <div id="myCarousel" class="carousel slide" data-interval="200">
+        <div id="myCarousel" class="carousel slide">
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">

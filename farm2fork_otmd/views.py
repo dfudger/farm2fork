@@ -133,11 +133,16 @@ def verify(request):
 def profile(request):
     return {}
 
-
 @view_config(route_name='providers', renderer='providers.mako')
 @add_title('Food Providers')
 @include_user
-def profile(request):
+def providers(request):
+    return {}
+
+@view_config(route_name='provider', renderer='provider.mako')
+@add_title('Food Provider')
+@include_user
+def provider(request):
     return {
         'categories':[
             'Object',

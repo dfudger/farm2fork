@@ -48,6 +48,7 @@
                 %endif
             %else:
             <input name="password" type="password" id="inputPassword" placeholder="Password">
+            <span class="help-inline"><a href="/password_recovery">Forgot your password?</a></span>
             %endif
         </div>
     </div>
@@ -65,12 +66,5 @@
 
             <a class="btn" href="/signup">Not a member of the Farm2Fork community yet?</a>
         </div>
-    </div>  
-    <div class="control-group">
-        <div class="controls">
-            <hr />
-
-            <a class="btn" href="/password_recovery">Forget your password?</a>
-        </div>
-    </div>  
+    </div>
 </form>

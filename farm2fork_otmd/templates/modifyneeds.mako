@@ -12,8 +12,8 @@
   <div class="modal-body">
     <input type="text" class="span2" placeholder="amount" name="quantity">
       <input type="text" class="span2" placeholder="units" name="units">
-      <input type="text" class="span2" placeholder="item title" name="item_title">
-      <select name="category_type" class="span2">
+      <input type="text" class="span4" placeholder="item title" name="item_title">
+      <select name="category_type" class="span4">
         % if categories:
              % for category in categories:
                  <option value="${category}">
