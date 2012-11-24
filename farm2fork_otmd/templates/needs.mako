@@ -67,7 +67,10 @@
                                             <input type="hidden" id="email" value="${user.email}">
                                         % endif
                                         <div class="form-actions">
+<<<<<<< HEAD
+=======
                                             <input type="hidden" id="need_id">
+>>>>>>> origin/da
                                             <button type="submit" disabled="disabled" class="btn">submit</button>
                                             <button type="button" disabled="disabled" class="btn">cancel</button>
                                         </div>

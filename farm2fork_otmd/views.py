@@ -133,12 +133,59 @@ def verify(request):
 def profile(request):
     return {}
 
-
 @view_config(route_name='providers', renderer='providers.mako')
 @add_title('Food Providers')
 @include_user
 def providers(request):
     return {}
+
+@view_config(route_name='provider', renderer='provider.mako')
+@add_title('Food Provider')
+@include_user
+def provider(request):
+    return {
+        'categories':[
+            'Object',
+            'Fruits and Vegetables',
+            'Milk and Alternatives',
+            'Meat and Alternatives', 
+            'Grains'
+        ],
+        'needs':[
+            {
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            }
+        ]}
 
 @view_config(route_name='construction', renderer='construction.mako')
 @add_title('Construction')
@@ -226,4 +273,53 @@ def needs(request):
         'food_banks': results,
         'food_bank_names': food_bank_names,
         'form': form
+    }
+
+@view_config(route_name='modifyneeds', renderer='modifyneeds.mako')
+@add_title('Modify Needs')
+@include_user
+def modifyneeds(request):
+
+    return {
+        'categories':[
+            'Fruits and Vegetables',
+            'Milk and Alternatives',
+            'Meat and Alternatives', 
+            'Grains'
+        ],
+        'needs':[
+            {
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            },{
+                'quantity':100,
+                'units':'lbs',
+                'item_title':'carrots',
+                'category':'Fruits and Vegetables',
+                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'is_perishable':1,
+                'is_refrigerated':1
+            }
+        ]
     }
