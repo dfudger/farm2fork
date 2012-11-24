@@ -14,8 +14,17 @@
           <div class="input-prepend input-append row-fluid">
               <select class="input-medium" name="food_bank">
                 <option value="">All Foodbanks</option>
+<<<<<<< HEAD
                 % if food_banks_names:
+=======
+<<<<<<< HEAD
+                % if food_bank_names:
+                     % for id, fb_name in food_bank_names.items():
+=======
+                % if food_banks_names and form.get:
+>>>>>>> parent of c78cc1d... Fixing merge confilt that I missed...
                      % for id, fb_name in food_banks_names.items():
+>>>>>>> 9e2e2c7e04bc24858bcc49987f618b951c28c1a5
                          <option value="${id}"
                          %if form.get('food_bank') == id :
                              selected
