@@ -33,6 +33,7 @@ def main(global_config, **settings):
     config.add_route('about', '/about')
     config.add_route('home', '/')
     config.add_route('foodbankprofile', '/provider/{id}')
+    config.add_route('providers', '/providers')
     config.add_route('signup', '/signup')
     config.add_route('signup_complete', '/signup/submission')
     config.add_route('verify', '/verify/{verification_key}')

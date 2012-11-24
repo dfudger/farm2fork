@@ -14,20 +14,18 @@
           <div class="input-prepend input-append row-fluid">
               <select class="input-medium" name="food_bank">
                 <option value="">All Foodbanks</option>
-                % if food_banks_names and form:
-                     % for id, fb_name in food_banks_names.items():
+                % if food_bank_names:
+                    % for id, fb_name in food_bank_names.items():
                          <option value="${id}"
                          %if form.get('food_bank') == id :
                              selected
                          %endif
-                         >  <!-- End of option -->
-                             ${fb_name}
-                        </option>
+                         > ${fb_name} </option>
                     % endfor
                 % endif
             </select>
-            % if form:
-              <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" name="item">
+            % if form.get:
+                <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" name="item">
             % endif
             <button type="submit" class="btn">Search</button>
           </div>
@@ -69,6 +67,10 @@
                                             <input type="hidden" id="email" value="${user.email}">
                                         % endif
                                         <div class="form-actions">
+<<<<<<< HEAD
+=======
+                                            <input type="hidden" id="need_id">
+>>>>>>> origin/da
                                             <button type="submit" disabled="disabled" class="btn">submit</button>
                                             <button type="button" disabled="disabled" class="btn">cancel</button>
                                         </div>

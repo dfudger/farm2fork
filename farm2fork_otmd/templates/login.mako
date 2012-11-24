@@ -66,4 +66,11 @@
             <a class="btn" href="/signup">Not a member of the Farm2Fork community yet?</a>
         </div>
     </div>  
+    <div class="control-group">
+        <div class="controls">
+            <hr />
+
+            <a class="btn" href="/signup">Forget your password?</a>
+        </div>
+    </div>  
 </form>
