@@ -123,7 +123,7 @@
                     <button class="btn btn-large" type="button">Donate Money</button>
                 </p>
             </div>
-
+            <%include file="modifyneeds.mako"/>
         </div><!-- class span9 end -->
     </div><!-- Row-fluid class end -->
 </div>
