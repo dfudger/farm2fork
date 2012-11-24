@@ -9,7 +9,7 @@
 <!-- Carousel -->
 <div class="row-fluid hidden-phone"> 
     <div class="span12">
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide" data-interval="200">
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="active item">
@@ -26,8 +26,8 @@
             </div>
           </div>
           <!-- Carousel nav -->
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          ##<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          ##<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
 </div> <!-- End Row 1-->
