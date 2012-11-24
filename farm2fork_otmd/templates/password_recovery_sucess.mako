@@ -7,7 +7,7 @@
         <h1>Password Recovery Sent</h1>
         <p>
             An email has been sent to the email you provided. Please check for
-            the email we are about to send you.
+            the email we are about to send you
         </p>
     </div>
-<
+</div>

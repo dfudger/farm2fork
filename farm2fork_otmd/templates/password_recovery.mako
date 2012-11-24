@@ -5,7 +5,6 @@
     <div class="span12">
         ## ${recaptcha_body | n}
         <h1>Password Recovery</h1>
-        ## TODO if a variable is set indicating if email is being sent do not display this form
         ## TODO display an error if the email is valid but not in the system?
         <form class="form-horizontal" method="POST">
             <div class="control-group">
