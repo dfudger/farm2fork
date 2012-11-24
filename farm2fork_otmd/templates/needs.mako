@@ -14,8 +14,13 @@
           <div class="input-prepend input-append row-fluid">
               <select class="input-medium" id="food_bank">
                 <option value="">All Foodbanks</option>
+<<<<<<< HEAD
                 % if food_bank_names:
                      % for id, fb_name in food_bank_names.items():
+=======
+                % if food_banks_names and form.get:
+                     % for id, fb_name in food_banks_names.items():
+>>>>>>> 9e2e2c7e04bc24858bcc49987f618b951c28c1a5
                          <option value="${id}"
                          %if form.get('food_bank') == id :
                              selected
@@ -26,7 +31,9 @@
                     % endfor
                 % endif
             </select>
-            <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
+            % if form.get:
+              <input type="text" class="input-medium" placeholder="search criteria..." value="${form.get('item')}" id="item">
+            % endif
             <button type="submit" class="btn">Search</button>
           </div>
         </form>
@@ -68,8 +75,8 @@
                                         % endif
                                         <div class="form-actions">
                                             <input type="hidden" id="need_id">
-                                            <button type="submit" class="btn">submit</button>
-                                            <button type="button" class="btn">cancel</button>
+                                            <button type="submit" disabled="disabled" class="btn">submit</button>
+                                            <button type="button" disabled="disabled" class="btn">cancel</button>
                                         </div>
                                     </form>
                                 </div>
