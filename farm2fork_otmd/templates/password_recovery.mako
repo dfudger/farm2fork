@@ -6,7 +6,7 @@
         ## ${recaptcha_body | n}
         <h1>Password Recovery</h1>
         ## TODO display an error if the email is valid but not in the system?
-        <form class="form-horizontal" action="/password/recovery/success" method="POST">
+        <form class="form-horizontal" action="/password/recovery" method="POST">
             <div class="control-group">
                 <label class="control-label" for="inputEmail">Email</label>
                 <div class="controls">
@@ -14,6 +14,8 @@
                         %if form.get("EMAIL_INVALID"):
                         <input name="email" type="text" id="inputEmail" value="${form.email}">
                         <span class="help-inline">This email is invalid</span>
+                        %else:
+                        <input name="email" type="text" id="inputEmail" placeholder="Email">
                         %endif
                     %else:
                     <input name="email" type="text" id="inputEmail" placeholder="Email">
