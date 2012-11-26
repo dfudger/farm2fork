@@ -32,8 +32,8 @@
     </div>
 </div> <!-- End Row 1-->
 
-<!-- Buttons -->
-<div class="row-fluid">
+<!-- Mobile Buttons -->
+<div class="row-fluid visible-phone">
     <div class="span12">
         <p id="buttonContainer">
 
@@ -43,20 +43,12 @@
 
         </p>
     </div>
-</div> <!-- End Row 2 - Buttons-->
+</div> <!-- End Mobile Buttons-->
 
-<!-- About F2F Section -->
+<!-- About F2F Row -->
 <div class="row-fluid">
-    <div class="span5">
-        <!--<div class="buttonR green">
-            <p>Signup!</p>
-        </div>-->
-        <div class="signupBtn hidden-phone">
-            <a href="/signup"><h3>Sign Up</h3>
-            <p>Join the Farm2Fork Community!</p></a>
-        </div>
-    </div>
-    <div class="span7">
+    <!--Who Are We-->
+    <div class="span4">
         <h2>What is Farm2Fork</h2>
         <hr/>
         <ul class="thumbnails pull-left" id="farmer-pic">
@@ -78,7 +70,45 @@
         </p>
 
     </div>
-</div> <!-- End Row -->
+    <!-- Sign Up-->
+    <div class="span4">
+        <h2>Join Us</h2>
+        <hr/>
+        <p id="aboutP">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae augue nibh, et ultrices quam. Aliquam rhoncus velit in sapien iaculis sit amet vehicula augue aliquam. In imperdiet enim sed velit lobortis fringilla. Curabitur auctor aliquam dui, eu placerat augue porta ac. Suspendisse potenti. Quisque sit amet ipsum dolor.
+        </p>
+        <div class="signupBtn" > 
+            <a href="/signup"><h3>Sign Up</h3>
+            <p>Join the Farm2Fork Community!</p></a>
+        </div>
+    </div>
+    <!-- What's Happening -->
+    <div class="span4 hidden-phone">
+        <h2>What's Happening</h2>
+        <hr/>
+        <p id="aboutP">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae augue nibh, et ultrices quam. Aliquam rhoncus velit in sapien iaculis sit amet vehicula augue aliquam. In imperdiet enim sed velit lobortis fringilla. Curabitur auctor aliquam dui, eu placerat augue porta ac. Suspendisse potenti. Quisque sit amet ipsum dolor.
+        </p>
+
+    </div>
+</div> <!-- End About F2F Row -->
+
+<!-- Mobile Buttons -->
+<div class="row-fluid hidden-phone">
+    <div class="span12 offset2">
+        <h2>How You Can Help:</h2>
+        
+        </div>
+    <div class="span12">
+        <p id="buttonContainer">
+
+            <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
+            <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
+
+        </p>
+    </div>
+</div> <!-- End Mobile Buttons-->
 
 
 <div id="loginModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

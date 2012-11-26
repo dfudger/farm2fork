@@ -16,11 +16,11 @@
                 <option value="">All Foodbanks</option>
                 % if food_bank_names:
                     % for id, fb_name in food_bank_names.items():
-                         <option value="${id}"
-                         %if form.get('food_bank') == id :
-                             selected
-                         %endif
-                         > ${fb_name} </option>
+                    <option value="${id}"
+                    %if form.get('food_bank') == id :
+                        selected
+                    %endif
+                    > ${fb_name} </option>
                     % endfor
                 % endif
             </select>
@@ -67,10 +67,6 @@
                                             <input type="hidden" id="email" value="${user.email}">
                                         % endif
                                         <div class="form-actions">
-<<<<<<< HEAD
-=======
-                                            <input type="hidden" id="need_id">
->>>>>>> origin/da
                                             <button type="submit" disabled="disabled" class="btn">submit</button>
                                             <button type="button" disabled="disabled" class="btn">cancel</button>
                                         </div>
