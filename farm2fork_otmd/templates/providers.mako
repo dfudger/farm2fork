@@ -15,7 +15,7 @@
                 </p>
                 ## TODO we should have hours here but the schema has it in another table
                 <p>
-                    ${food_bank.address}
+                    Is at the address: ${food_bank.address}
                 </p>
             %endfor
         %endif
