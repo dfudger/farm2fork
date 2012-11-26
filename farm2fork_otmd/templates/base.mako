@@ -11,6 +11,8 @@
         </style>
         <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.min.css" >
         <link rel="stylesheet/less" type="text/css" href="/static/css/style.less">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/static/js/jquery-1.8.2.min.js"><\/script>')</script>
         
         <!-- Other scripts at end -->
         <title><%block name="page_title">farm2fork</%block></title>
@@ -76,14 +78,14 @@
 
                 <div class="row-fluid">
                     <div class="span4 pull-right">
-                        <div class="addthis_toolbox addthis_default_style ">
+                        <!-- <div class="addthis_toolbox addthis_default_style ">
                             <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
                             <a class="addthis_button_tweet"></a>
                             <a class="addthis_button_pinterest_pinit"></a>
                             <a class="addthis_counter addthis_pill_style"></a>
                         </div>
                         <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb45bd34006102f"></script>
+                        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb45bd34006102f"></script>-->
                     </div>
                 </div>
             </div>
@@ -120,8 +122,6 @@
         </div>
 
         <!-- puting scripts here is benificial, so your page loads parallel -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/static/js/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/static/js/less.js" type="text/javascript"></script>
         <script src="/static/js/script.js" type="text/javascript"></script>
