@@ -19,7 +19,7 @@
 %endif
 
 <div class="modal hide fade" id="addneed_modal">
-  <form class="form-horizontal" method="post" action="/createneed">
+  <form class="form-horizontal" method="post" action="/createneed" style="margin:0;">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3>Add new need</h3>
@@ -36,8 +36,9 @@
         <label class="control-label" for="quantity">Amount</label>
         <div class="controls">
           <input type="text" class="" id="quantity" value="${form.quantity}" name="quantity">
+          <span class="help-inline">eg: 20</span>
           %if form.get('QUANTITY_INVALID'):
-            <span class="help-inline">Must be a number greater than 0.</span>
+            <span class="help-block">Must be a number greater than 0.</span>
           %endif
         </div>
       </div>
@@ -51,8 +52,9 @@
         <label class="control-label" for="units">Units</label>
         <div class="controls">
           <input type="text" class="" id="units" value="${form.units}" name="units"> 
+          <span class="help-inline">eg: kg</span>
           %if form.get('UNITS_INVALID'):
-            <span class="help-inline">Must be less than 45 characters.</span>
+            <span class="help-block">Must be less than 45 characters.</span>
           %endif
         </div>
       </div>
@@ -66,8 +68,9 @@
         <label class="control-label" for="item_title">Item Title</label>
         <div class="controls">
           <input type="text" class="" id="item_title" value="${form.item_title}" name="item_title"> 
+          <span class="help-inline">eg: carrots</span>
           %if form.get('ITEM_TITLE_INVALID'):
-            <span class="help-inline">Must be less than 45 characters.</span>
+            <span class="help-block">Must be less than 45 characters.</span>
           %endif
         </div>
       </div>
@@ -113,8 +116,9 @@
         <label class="control-label" for="description">Description</label>
         <div class="controls">
           <textarea type="text" class="" id="description" name="description">${form.description}</textarea>
+          <span class="help-inline">eg: preferably fresh.</span>
           %if form.get('DESCRIPTION_INVALID'):
-            <span class="help-inline">Must be less than 45 characters.</span>
+            <span class="help-block">Must be less than 45 characters.</span>
           %endif
         </div>
       </div>
@@ -196,7 +200,7 @@
               <div class="accordion-inner">
                 <div class="row-fluid">
                   <div class="span12">
-                    <form class="form-inline" id="update_need" method="post" action="/createneed">
+                    <form class="form-inline" id="update_need" method="post" action="/createneed" style="margin:0;">
 
                       %if form and form.get('ERROR_IN_UPDATE') and form.item_title==need['item_title']:
 
