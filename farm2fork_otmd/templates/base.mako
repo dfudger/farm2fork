@@ -39,17 +39,16 @@
                                 </ul>
                             </%block>
                             <ul class="nav pull-right">
-                                
-                                    % if user:
-                                    <li><a href="/profile">profile</a></li>
-                                    <li>
-                                        <a href="/logout">logout</a>
-                                    % else:
-                                    <li>
-                                        <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
-                                        <a href="/login" class="visible-phone">login/signup</a>
-                                    % endif
+                                % if user:
+                                <li>
+                                    <a href="/logout">logout</a>
                                 </li>
+                                % else:
+                                <li>
+                                    <a href="#loginModal" class="hidden-phone" role="button" data-toggle="modal">login</a>
+                                    <a href="/login" class="visible-phone">login/signup</a>
+                                </li>
+                                % endif
                             </ul>
                         </div>
                     </div>
