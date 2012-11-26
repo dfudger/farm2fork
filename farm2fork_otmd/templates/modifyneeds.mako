@@ -89,6 +89,7 @@
                                 Refrigerate?
                               </label>
                               <textarea type="text" class="span12" placeholder="description" name="description">${need['description']}</textarea>
+                              <input type="hidden" name="id" value="${need['id']}">
                               <div class="form-actions">
                                   <button type="submit" class="btn">submit</button>
                                   <button type="button" class="btn">cancel</button>
