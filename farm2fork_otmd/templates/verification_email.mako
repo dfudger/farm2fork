@@ -1,3 +1,6 @@
+## -*- coding: utf-8 -*-
+Content-Type: text/html
+
 <html>
     <body>
         <h3>Farm2Fork Account Verification</h3>

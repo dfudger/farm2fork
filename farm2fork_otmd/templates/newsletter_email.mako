@@ -1,4 +1,6 @@
 ## -*- coding: utf-8 -*-
+Content-Type: text/html
+
 <html>
     <body>
         <h1>Farm2fork Newsletter for ${date}</h1> ## maybe don't hard code the date...
