@@ -19,7 +19,7 @@
   %endif
 %endif
 <div class="modal hide fade" id="addneed_modal">
-  <form class="form-horizontal">
+  <form class="form-horizontal" method="post">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3>Add new need</h3>
@@ -93,7 +93,7 @@
         </div>
       </div>
     %else:
-      <div class="control-group error">
+      <div class="control-group">
         <label class="control-label" for="quantity">Amount</label>
         <div class="controls">
           <input type="text" class="" id="quantity" name="quantity">
@@ -164,9 +164,9 @@
                 <div class="accordion-inner">
                   <div class="row-fluid">
                     <div class="span12">
-                      <form class="form-inline" id="update_need">
+                      <form class="form-inline" id="update_need" method="post">
                         %if form and form.get('error in update') and form.id==need['id']:
-                          <input type="text" class="span2" placeholder="amount" name="quantity" value="${form.quantity}">
+                          <input type="text" class="span2 inline-error" placeholder="amount" name="quantity" value="${form.quantity}">
                           <input type="text" class="span2" placeholder="units" name="units" value="${form.units}">
                           <input type="text" class="span2" placeholder="item title" name="item_title" value="${form.item_title}">
                           <select name="category_type" class="span2">
@@ -196,10 +196,10 @@
                             >
                             Refrigerate?
                           </label>
+                          <span class="help-block inline-error-label">Must be a number greater than 0.</span>
                           <textarea type="text" class="span12" placeholder="description" name="description">${form.description}</textarea>
                         %else:
-                          <input type="text" class="span2 inline-error" placeholder="amount" name="quantity" value="${need['quantity']}">
-                          <span class="help-block">Must be a number greater than 0.</span>
+                          <input type="text" class="span2" placeholder="amount" name="quantity" value="${need['quantity']}">
                           <input type="text" class="span2" placeholder="units" name="units" value="${need['units']}">
                           <input type="text" class="span2" placeholder="item title" name="item_title" value="${need['item_title']}">
                           <select name="category_type" class="span2">
