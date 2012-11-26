@@ -25,9 +25,6 @@
                 <img src="/static/img/plums.jpg" alt="Plums" />
             </div>
           </div>
-          <!-- Carousel nav -->
-          ##<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          ##<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
 </div> <!-- End Row 1-->
@@ -43,7 +40,7 @@
 
         </p>
     </div>
-</div> <!-- End Row 2 - Buttons-->
+</div>
 
 <!-- About F2F Section -->
 <div class="row-fluid">

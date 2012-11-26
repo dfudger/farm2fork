@@ -134,12 +134,16 @@
             </div>
             %endif
 
-            <div>
-                <p>
-                    <button class="btn btn-large" type="button">Donate Food</button>
-                    <button class="btn btn-large" type="button">Donate Time</button>
-                    <button class="btn btn-large" type="button">Donate Money</button>
-                </p>
+            <!-- Buttons -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <p id="buttonContainer">
+                        <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
+                        <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
+                        <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
+
+                    </p>
+                </div>
             </div>
 
             %if USER_IS_WORKER:
