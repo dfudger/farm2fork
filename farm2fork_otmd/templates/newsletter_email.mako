@@ -1,3 +1,4 @@
+## -*- coding: utf-8 -*-
 <html>
     <body>
         <h1>Farm2fork Newsletter for ${date}</h1> ## maybe don't hard code the date...
@@ -9,7 +10,7 @@
             needs please go to the farm2fork website and tell us about your
             intend to donate.
         </p>
-        % if food_bank:
+        % if food_banks:
             %for pantry in food_banks:
                 <h2> ${pantry.name}</h2>
                 ## TODO make this a link to the provider page of each foodbank
