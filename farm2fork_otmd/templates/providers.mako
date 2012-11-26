@@ -9,9 +9,9 @@
         </p>
         %if food_banks:
             %for food_bank in food_banks:
-                <h2>${food_bank.name}</h2>
+                <h2><a href="/provider/${food_bank.pantry_id}">${food_bank.name}</a></h2>
                 <p>
-                    ${food_bank.contact}
+                    Can be reached at: ${food_bank.contact}
                 </p>
                 ## TODO we should have hours here but the schema has it in another table
                 <p>
