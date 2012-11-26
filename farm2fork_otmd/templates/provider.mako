@@ -8,6 +8,16 @@
 </%block>
 
 
+##pantry_id = Column(INT(11), primary_key=True, nullable=False)
+##contact = Column(VARCHAR(45))
+##name = Column(VARCHAR(45), nullable=False)
+##Hours_id = Column(INT(11), ForeignKey('Hours.hours_id'), primary_key=True,
+                  ##nullable=False)
+##address = Column(VARCHAR(512))
+##city = Column(VARCHAR(45))
+##postal_code = Column(VARCHAR(45))
+##province_state = Column(VARCHAR(2))
+
 <!-- Food Bank Profile -->
 <div class="container-fluid">
     <div class="row-fluid">
@@ -25,8 +35,10 @@
 
                     <div id="collapseOne" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <p>University Of Guelph</p>
-                            <p>100 Stone W, Guelph, ON N1H</p>
+                            ## 
+                            <p>
+                                ${foodbank.address}, ${foodbank.city}, ${foodbank.province_state} ${foodbank.province_state}
+                            </p>
                             <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="250" height="250" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=43.52824233524411~-80.22379115344238&amp;sty=r&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=University+of+Guelph%2C+ON&amp;form=LMLTEW&amp;pp=43.527889251708984~-80.22310638427734&amp;mkt=en-ca&amp;emid=a70d037b-321d-08f5-65cf-779043d20d9d&amp;w=250&amp;h=250"></iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=43.52824233524411~-80.22379115344238&amp;lvl=14&amp;sty=r&amp;where1=University+of+Guelph%2C+ON&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=43.52824233524411~-80.22379115344238&amp;rtp=~pos.43.527889251708984_-80.22310638427734_University+of+Guelph%2C+ON&amp;lvl=14&amp;sty=r&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;</div></div>
                         </div>
                     </div>
