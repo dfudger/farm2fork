@@ -42,7 +42,9 @@
             %if form:
                 %if form.get("PASSWORD_INVALID"):
                 <input name="password" type="password" id="inputPassword">
-                <span class="help-inline">The password you provided is incorrect. <a href="/password_recovery">Forgot your password?</a></span>
+                <span class="help-inline">
+                    The password you provided is incorrect. <a href="/password_recovery">Forgot your password?</a>
+                </span>
                 %else:
                 <input name="password" type="password" id="inputPassword" placeholder="Password">
                 <span class="help-inline"><a href="/password/recovery">Forgot your password?</a></span>

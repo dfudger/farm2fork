@@ -1,6 +1,9 @@
+## -*- coding: utf-8 -*-
+## Content-Type: text/html
+
 <html>
     <body>
-        <h1>Farm2fork Newsletter for now November 28th</h1> ## maybe don't hard code the date...
+        <h1>Farm2fork Newsletter for ${date}</h1> ## maybe don't hard code the date...
         ## TODO replace this title with a image of the logo
         <p>
             Thank you for being an active member of the farm2fork community.
@@ -9,12 +12,12 @@
             needs please go to the farm2fork website and tell us about your
             intend to donate.
         </p>
-        % if food_bank:
-            %for pantry, requests in food_banks:
+        % if food_banks:
+            %for pantry in food_banks:
                 <h2> ${pantry.name}</h2>
-                ## TODO Link to the list of needs page with a preticular foodbank selected
+                ## TODO make this a link to the provider page of each foodbank
                 <ul>
-                %for request in requests:
+                    %for request in pantry.requests:
                     <li>
                         ${request.quantity} ${request.item.item_title}
                     </li>
