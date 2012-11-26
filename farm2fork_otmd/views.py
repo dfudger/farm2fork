@@ -153,6 +153,7 @@ def provider(request):
         ],
         'needs':[
             {
+                'id':1,
                 'quantity':100,
                 'units':'lbs',
                 'item_title':'carrots',
@@ -161,29 +162,32 @@ def provider(request):
                 'is_perishable':1,
                 'is_refrigerated':1
             },{
-                'quantity':100,
-                'units':'lbs',
-                'item_title':'carrots',
+                'id':2,
+                'quantity':2,
+                'units':'kg',
+                'item_title':'apples',
                 'category':'Fruits and Vegetables',
-                'description':'OMG CARROTS FUUUUUUUUUUUU',
+                'description':'Grosser than you.',
                 'is_perishable':1,
-                'is_refrigerated':1
+                'is_refrigerated':0
             },{
-                'quantity':100,
-                'units':'lbs',
-                'item_title':'carrots',
-                'category':'Fruits and Vegetables',
-                'description':'OMG CARROTS FUUUUUUUUUUUU',
-                'is_perishable':1,
-                'is_refrigerated':1
+                'id':3,
+                'quantity':2,
+                'units':'',
+                'item_title':'refigerators',
+                'category':'Object',
+                'description':'Large, standard house size or bigger.',
+                'is_perishable':0,
+                'is_refrigerated':0
             },{
-                'quantity':100,
-                'units':'lbs',
-                'item_title':'carrots',
-                'category':'Fruits and Vegetables',
-                'description':'OMG CARROTS FUUUUUUUUUUUU',
-                'is_perishable':1,
-                'is_refrigerated':1
+                'id':4,
+                'quantity':30,
+                'units':'gr',
+                'item_title':'meth',
+                'category':'Meat and Alternatives',
+                'description':'So we don\'t get bored',
+                'is_perishable':0,
+                'is_refrigerated':0
             }
         ]}
 
