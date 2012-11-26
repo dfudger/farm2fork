@@ -50,9 +50,13 @@
 
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
+                            ## TODO we need something in the database that will
+                            ##    make one pantry worker have this role. We can
+                            ##    then replace these static values
                             <li>Head Coordinator: Jane Doe</li>
                             <li>Phone: 519-226-1235</li>
-                            <li>Fax:   221-231-1422</li>
+                            <li>Fax:   221-231-1422</li> 
+                            ## What is this the 80's?
                             <li><a href="mailto:testfarm@example.com">Email: testfarm@example.com</a></li>
                         </div>
                     </div>
@@ -73,6 +77,7 @@
                 </p>
             </div>
 
+            %if pantry.hours:
             <div>
                 <h3>Hours</h3>
                 <table class="table">  
@@ -87,9 +92,9 @@
                     <tbody>  
                         <tr>  
                             
-                            <td>12:00AM-12:00PM</td> 
-                            <td>12:00AM-12:00PM</td>
-                            <td>12:00AM-12:00PM</td>
+                            <td>${pantry.hours.monday}</td> 
+                            <td>${pantry.hours.tuesday}</td>
+                            <td>${pantry.hours.wednesday}</td>
                         </tr>  
                     </tbody>  
                 </table>
@@ -105,9 +110,9 @@
 
                     <tbody>  
                         <tr>
-                            <td>12:00AM-12:00PM</td>
-                            <td>12:00AM-12:00PM</td> 
-                            <td>12:00AM-12:00PM</td>
+                            <td>${pantry.hours.thursday}</td>
+                            <td>${pantry.hours.friday}</td> 
+                            <td>${pantry.hours.saturday}</td>
                         </tr>  
                     </tbody>  
                 </table>
@@ -121,12 +126,13 @@
 
                     <tbody>  
                         <tr>
-                            <td>12:00AM-12:00PM</td>
+                            <td>${pantry.hours.sunday}</td>
                         </tr>  
                     </tbody>  
                 </table>
                     
             </div>
+            %endif
 
             <div>
                 <p>
@@ -135,6 +141,7 @@
                     <button class="btn btn-large" type="button">Donate Money</button>
                 </p>
             </div>
+
             %if USER_IS_WORKER:
                 <%include file="modifyneeds.mako"/>
             %endif
