@@ -57,7 +57,7 @@
                             <li>Phone: 519-226-1235</li>
                             <li>Fax:   221-231-1422</li> 
                             ## What is this the 80's?
-                            <li><a href="mailto:testfarm@example.com">Email: testfarm@example.com</a></li>
+                            <li>Email: <a href="mailto:janedoe@example.com">janedoe@example.com</a></li>
                         </div>
                     </div>
                 </div>
@@ -77,61 +77,39 @@
                 </p>
             </div>
 
+            ##<div>
             %if pantry.hours:
-            <div>
                 <h3>Hours</h3>
-                <table class="table">  
-                    <thead>  
-                        <tr>  
-                            <th>Monday</th>  
-                            <th>Tuesday</th>  
-                            <th>Wednesday</th>  
-                        </tr>  
-                    </thead>
-
-                    <tbody>  
-                        <tr>  
-                            
-                            <td>${pantry.hours.monday}</td> 
-                            <td>${pantry.hours.tuesday}</td>
-                            <td>${pantry.hours.wednesday}</td>
-                        </tr>  
-                    </tbody>  
+                <table class="hours_table">
+                    <tr>
+                        <td>Monday</td>
+                        <td>${pantry.hours.monday}</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>${pantry.hours.tuesday}</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>${pantry.hours.wednesday}</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>${pantry.hours.thursday}</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>${pantry.hours.friday}</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>${pantry.hours.saturday}</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>${pantry.hours.sunday}</td>
+                    </tr>
                 </table>
-
-                <table class="table">
-                    <thead>  
-                        <tr>
-                            <th>Thursday</th>  
-                            <th>Friday</th>  
-                            <th>Saturday</th>  
-                        </tr>  
-                    </thead>
-
-                    <tbody>  
-                        <tr>
-                            <td>${pantry.hours.thursday}</td>
-                            <td>${pantry.hours.friday}</td> 
-                            <td>${pantry.hours.saturday}</td>
-                        </tr>  
-                    </tbody>  
-                </table>
-
-                <table class="table">
-                    <thead>  
-                        <tr> 
-                            <th>Sunday</th>     
-                        </tr>  
-                    </thead>
-
-                    <tbody>  
-                        <tr>
-                            <td>${pantry.hours.sunday}</td>
-                        </tr>  
-                    </tbody>  
-                </table>
-                    
-            </div>
             %endif
 
             <!-- Buttons -->
