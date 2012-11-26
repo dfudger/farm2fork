@@ -82,31 +82,31 @@
                 <h3>Hours</h3>
                 <table class="hours_table">
                     <tr>
-                        <td>Monday</td>
+                        <td><strong>Monday</strong></td>
                         <td>${pantry.hours.monday}</td>
                     </tr>
                     <tr>
-                        <td>Tuesday</td>
+                        <td><strong>Tuesday</strong></td>
                         <td>${pantry.hours.tuesday}</td>
                     </tr>
                     <tr>
-                        <td>Wednesday</td>
+                        <td><strong>Wednesday</strong></td>
                         <td>${pantry.hours.wednesday}</td>
                     </tr>
                     <tr>
-                        <td>Thursday</td>
+                        <td><strong>Thursday</strong></td>
                         <td>${pantry.hours.thursday}</td>
                     </tr>
                     <tr>
-                        <td>Friday</td>
+                        <td><strong>Friday</strong></td>
                         <td>${pantry.hours.friday}</td>
                     </tr>
                     <tr>
-                        <td>Saturday</td>
+                        <td><strong>Saturday</strong></td>
                         <td>${pantry.hours.saturday}</td>
                     </tr>
                     <tr>
-                        <td>Sunday</td>
+                        <td><strong>Sunday</strong></td>
                         <td>${pantry.hours.sunday}</td>
                     </tr>
                 </table>
