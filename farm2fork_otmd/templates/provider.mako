@@ -84,7 +84,7 @@
 
                 <table class="table">
                     <thead>  
-                        <tr> 
+                        <tr>
                             <th>Thursday</th>  
                             <th>Friday</th>  
                             <th>Saturday</th>  
@@ -123,7 +123,9 @@
                     <button class="btn btn-large" type="button">Donate Money</button>
                 </p>
             </div>
-            <%include file="modifyneeds.mako"/>
+            %if "USER_IS_WORKER":
+                <%include file="modifyneeds.mako"/>
+            %endif
         </div><!-- class span9 end -->
     </div><!-- Row-fluid class end -->
 </div>

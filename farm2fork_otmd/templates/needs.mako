@@ -48,7 +48,7 @@
                       <div class="accordion-group">
                         <div class="accordion-heading">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionF${i}" href="#collapseF${i}N${j}">
-                              ${request.quantity} ${request.item.item_title}
+                              ${request.quantity} ${request.units} ${request.item.item_title}
                           </a>
                         </div>
                         <div id="collapseF${i}N${j}" class="accordion-body collapse">

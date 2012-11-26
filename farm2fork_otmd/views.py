@@ -143,15 +143,10 @@ def providers(request):
 @add_title('Food Provider')
 @include_user
 def provider(request):
-    return {
-        'categories':[
-            'Object',
-            'Fruits and Vegetables',
-            'Milk and Alternatives',
-            'Meat and Alternatives', 
-            'Grains'
-        ],
-        'needs':[
+
+    class pantry():
+        
+        requests = [
             {
                 'id':1,
                 'quantity':100,
@@ -189,7 +184,17 @@ def provider(request):
                 'is_perishable':0,
                 'is_refrigerated':0
             }
-        ]}
+        ]
+
+    return {
+        'category_types':[
+            'Object',
+            'Fruits and Vegetables',
+            'Milk and Alternatives',
+            'Meat and Alternatives', 
+            'Grains'
+        ],
+        'pantry' : pantry}
 
 @view_config(route_name='construction', renderer='construction.mako')
 @add_title('Construction')
