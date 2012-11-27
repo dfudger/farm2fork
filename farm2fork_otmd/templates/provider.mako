@@ -24,7 +24,7 @@
         <div class="span4">
             <!--Sidebar content-->
 
-            <h3>Food Bank Example</h3>
+            <h3>${pantry.name}</h3>
             <img src="/static/img/food_bank.jpg" alt="">
 
             <div class="accordion" id="accordion2">
