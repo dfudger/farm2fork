@@ -4,10 +4,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
-        <h1>Farm2fork Newsletter for ${date}</h1> ## maybe don't hard code the date...
+        <h1>Farm2fork Newsletter for ${date}</h1>
         ## TODO replace this title with a image of the logo
         <p>
-            Thank you for being an active member of the farm2fork community. Here are some things that we would love to make avaible to the users of food banks and pantries. If you can help with any of these needs please 
+            Thank you for being an active member of the Farm2Fork community. Here are some things that we would love to make avaible to the users of food banks and pantries. If you can help with any of these needs please 
         </p>
         % if food_banks:
             %for pantry in food_banks:
