@@ -80,7 +80,7 @@
             ##<div>
             %if pantry.hours:
                 <h3>Hours</h3>
-                <table class="hours_table">
+                <table id="hours_table">
                     <tr>
                         <td><strong>Monday</strong></td>
                         <td>${pantry.hours.monday}</td>
@@ -111,6 +111,8 @@
                     </tr>
                 </table>
             %endif
+
+            <hr>
 
             <!-- Buttons -->
             <div class="row-fluid">
