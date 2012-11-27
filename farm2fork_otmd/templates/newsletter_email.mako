@@ -1,5 +1,5 @@
 ## -*- coding: utf-8 -*-
-## Content-Type: text/html
+Content-Type: text/html;
 
 <html>
     <body>
