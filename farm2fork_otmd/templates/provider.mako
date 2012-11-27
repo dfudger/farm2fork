@@ -21,7 +21,7 @@
 <!-- Food Bank Profile -->
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span3">
+        <div class="span4">
             <!--Sidebar content-->
 
             <h3>Food Bank Example</h3>
@@ -64,7 +64,7 @@
             </div>
         </div><!-- class span3 end -->
         
-        <div class="span9">
+        <div class="span8">
             <!--Body content-->
             <div>
                 <h3>About</h3>
