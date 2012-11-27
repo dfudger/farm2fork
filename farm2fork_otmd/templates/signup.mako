@@ -1,12 +1,6 @@
-
 <%inherit file="base.mako"/>
 
 <%block name="page_title">farm2fork - ${title}</%block>
-
-<%block name="header">
-    <h1 id="header_title">${title} <small>test</small></h1>
-</%block>
-
 
 <div class="fluid-row">
     <div class="span12">
@@ -78,13 +72,13 @@
                 <div class="controls">
                 %if form.get("PASSWORD_INVALID"):
                     <input name="password" type="password" id="inputPassword">
-                    <span class="help-inline">The password you provided does not meet our standards. It should be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
+                    <span class="help-inline">The password you provided does not meet our standards. It should be 8-20 characters long</span>
                 %elif form.get("PASSWORD_MISMATCH"):
                     <input name="password" type="password" id="inputPassword">
                     <span class="help-inline">The password you provided is incorrect</span>
                 %else:
                     <input name="password" type="password" placeholder="Enter a Password">
-                    <span class="help-inline">Your password must be 8-20 characters long with uppercase and lowercase letters with at least 1 number.</span>
+                    <span class="help-inline">Your password must be 8-20 characters.</span>
                 %endif
                 </div>
             </div>
