@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
     <body>
         <h1>Farm2fork Newsletter for ${date}</h1> ## maybe don't hard code the date...
         ## TODO replace this title with a image of the logo
