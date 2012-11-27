@@ -43,21 +43,21 @@
         </div>
       </div>
 
-      %if form.get("UNITS_INVALID"):
-        <div class="control-group error">
-      %else:
-        <div class="control-group">
-      %endif
+      ##%if form.get("UNITS_INVALID"):
+      ##  <div class="control-group error">
+      ##%else:
+      ##  <div class="control-group">
+      ##%endif
 
-        <label class="control-label" for="units">Units</label>
-        <div class="controls">
-          <input type="text" class="" id="units" value="${form.units}" name="units"> 
-          <span class="help-inline">eg: kg</span>
-          %if form.get('UNITS_INVALID'):
-            <span class="help-block">Must be less than 45 characters.</span>
-          %endif
-        </div>
-      </div>
+      ##  <label class="control-label" for="units">Units</label>
+      ##  <div class="controls">
+      ##    <input type="text" class="" id="units" value="${form.units}" name="units"> 
+      ##    <span class="help-inline">eg: kg</span>
+      ##    %if form.get('UNITS_INVALID'):
+      ##      <span class="help-block">Must be less than 45 characters.</span>
+      ##    %endif
+      ##  </div>
+      ##</div>
 
       %if form.get("ITEM_TITLE_INVALID"):
         <div class="control-group error">
@@ -80,7 +80,7 @@
             % if category_types:
                % for category in category_types:
                    <option value="${category}" 
-                    %if form.category == category:
+                    %if form.category_type == category:
                       selected="selected"
                     %endif
                    >${category}</option>
@@ -132,13 +132,13 @@
           <span class="help-inline">eg: 20</span>
         </div>
       </div>
-      <div class="control-group">
-        <label class="control-label" for="units">Units</label>
-        <div class="controls">
-          <input type="text" class="" id="units" name="units"> 
-          <span class="help-inline">eg: kg</span>
-        </div>
-      </div>
+      ##<div class="control-group">
+      ##  <label class="control-label" for="units">Units</label>
+      ##  <div class="controls">
+      ##    <input type="text" class="" id="units" name="units"> 
+      ##    <span class="help-inline">eg: kg</span>
+      ##  </div>
+      ##</div>
       <div class="control-group">
         <label class="control-label" for="item_title">Item Title</label>
         <div class="controls">
@@ -193,7 +193,7 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseN${i}">
-                 ${need['quantity']} ${need['units']} ${need['item_title']}
+                 ${need.quantity} ${need.item.item_title}
               </a>
             </div>
             <div id="collapseN${i}" class="accordion-body collapse">
@@ -202,7 +202,7 @@
                   <div class="span12">
                     <form class="form-inline" id="update_need" method="post" action="/createneed" style="margin:0;">
 
-                      %if form and form.get('ERROR_IN_UPDATE') and form.item_title==need['item_title']:
+                      %if form and form.get('ERROR_IN_UPDATE') and form.item_title==need.item_title:
 
                         %if form.get("QUANTITY_INVALID"):
                           <input type="text" class="span2 inline-error" placeholder="amount" name="quantity" value="${form.quantity}">
@@ -210,11 +210,11 @@
                           <input type="text" class="span2" placeholder="amount" name="quantity" value="${form.quantity}">
                         %endif
 
-                        %if form.get("UNITS_INVALID"):
-                          <input type="text" class="span2 inline-error" placeholder="units" name="units" value="${form.units}">
-                        %else:                            
-                          <input type="text" class="span2" placeholder="units" name="units" value="${form.units}">
-                        %endif
+                        ##%if form.get("UNITS_INVALID"):
+                        ##  <input type="text" class="span2 inline-error" placeholder="units" name="units" value="${form.units}">
+                        ##%else:                            
+                        ##  <input type="text" class="span2" placeholder="units" name="units" value="${form.units}">
+                        ##%endif
 
                         %if form.get("ITEM_TITLE_INVALID"):
                           <input type="text" class="span2 inline-error" placeholder="item title" name="item_title" value="${form.item_title}">
@@ -226,7 +226,7 @@
                           % if category_types:
                             % for category in category_types:
                                <option value="${category}"
-                               %if form.category == category :
+                               %if form.category_type == category :
                                   selected="selected"
                                %endif
                                >${category}</option>
@@ -252,9 +252,9 @@
                           <span class="help-block inline-error-label">Must be a number greater than 0.</span>
                         %endif
 
-                        %if form.get("UNITS_INVALID"):
-                          <span class="help-block inline-error-label">Units must be less than 45 characters long.</span>
-                        %endif
+                        ##%if form.get("UNITS_INVALID"):
+                        ##  <span class="help-block inline-error-label">Units must be less than 45 characters long.</span>
+                        ##%endif
 
                         %if form.get("ITEM_TITLE_INVALID"):
                           <span class="help-block inline-error-label">Item Title must be less than 45 characters long.</span>
@@ -269,14 +269,14 @@
 
                       %else:
 
-                        <input type="text" class="span2" placeholder="amount" name="quantity" value="${need['quantity']}">
-                        <input type="text" class="span2" placeholder="units" name="units" value="${need['units']}">
-                        <input type="text" class="span2" placeholder="item title" name="item_title" value="${need['item_title']}">
+                        <input type="text" class="span2" placeholder="amount" name="quantity" value="${need.quantity}">
+                        ##<input type="text" class="span2" placeholder="units" name="units" value="${need.units}">
+                        <input type="text" class="span2" placeholder="item title" name="item_title" value="${need.item.item_title}">
                         <select name="category_type" class="span2">
                           % if category_types:
                             % for category in category_types:
                                <option value="${category}"
-                               %if need['category'] == category :
+                               %if need.item.category_type == category :
                                 selected="selected"
                                %endif
                                >${category}</option>
@@ -285,19 +285,19 @@
                         </select>
                         <label class="checkbox">
                           <input type="checkbox" name="is_perishable"
-                          % if need['is_perishable']==1:
+                          % if need.item.is_perishable==1:
                             checked="yes"
                           % endif
                           > Perishable?
                         </label>
                         <label class="checkbox">
                           <input type="checkbox" name="is_refrigerated"
-                          % if need['is_refrigerated']==1:
+                          % if need.item.is_refrigerated==1:
                             checked="yes"
                           % endif
                           > Refrigerate?
                         </label>
-                        <textarea type="text" class="span12" placeholder="description" name="description">${need['description']}</textarea>
+                        <textarea type="text" class="span12" placeholder="description" name="description">${need.item.description}</textarea>
 
                       %endif
                       <div class="form-actions">
