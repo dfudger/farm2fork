@@ -25,14 +25,11 @@
                 <img src="/static/img/plums.jpg" alt="Plums" />
             </div>
           </div>
-          <!-- Carousel nav -->
-          ##<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-          ##<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
 </div> <!-- End Row 1-->
 
-<!-- Mobile Buttons -->
+<!-- Buttons -->
 <div class="row-fluid visible-phone">
     <div class="span12">
         <p id="buttonContainer">
@@ -43,7 +40,7 @@
 
         </p>
     </div>
-</div> <!-- End Mobile Buttons-->
+</div> <!-- End Buttons-->
 
 <!-- About F2F Row -->
 <div class="row-fluid">
