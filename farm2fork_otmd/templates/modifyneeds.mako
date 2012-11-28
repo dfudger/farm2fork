@@ -281,7 +281,6 @@ category_types = ['Object', 'Fruits and Vegetables',
                         <select name="category_type" class="span2">
                           % if category_types:
                             % for category in category_types:
-                              ${need.item.category_type}
                                <option value="${category}"
                                %if need.item.category_type == category :
                                 selected="selected"

@@ -25,8 +25,6 @@
                 <div class="container-fluid">
                     <div class="row-fluid">
                         <div class="span12">
-                            
-                            <!-- <img src="http://placehold.it/100x40" class="pull-left" style="width:100px;height:40px;" /> -->
 
                             <a class="brand" href="/"><img style="height:30px" src="/static/img/logo1.png" alt="Farm2Fork logo"></a>
 
