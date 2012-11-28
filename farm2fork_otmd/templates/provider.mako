@@ -123,9 +123,8 @@
                 <div class="span12">
                     <p id="buttonContainer">
                         <button onclick="window.open('/construction','_self')" class="button">Donate Food</button>
-                        <button onclick="window.open('/construction','_self')" class="button">Donate Time</button>
-                        <button onclick="window.open('/construction','_self')" class="button">Donate Money</button>
-
+                        <button onclick="window.open('http://www.spiritwind-christian-centre.ca/media/GFB_vol_form09.pdf','_self')" class="button">Donate Time</button>
+                        <button onclick="window.open('http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d28507','_self')" class="button">Donate Money</button>
                     </p>
                 </div>
             </div>
