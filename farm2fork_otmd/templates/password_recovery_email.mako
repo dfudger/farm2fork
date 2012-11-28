@@ -18,7 +18,7 @@
             ${temp_password}
         </p>
         <p>
-            If you would like to <a href"${site_domain}/login">try out your new password</a>
+            If you would like to <a href="${site_domain}/login">try out your new password</a>
         </p>
         <p>
             Thank you for you involvement.
