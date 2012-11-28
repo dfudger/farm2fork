@@ -101,7 +101,7 @@
                 <footer class="span12">
                     <div class="contents">
                         <hr/>
-                        On The Mark Design - 2012
+                        University of Guelph CIS3750 Class Of 2012
                     </div>
                 </footer>
             </div> <!-- End Row -->
