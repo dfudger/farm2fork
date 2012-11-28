@@ -4,6 +4,12 @@
   </div>
 </div>
 
+<%
+category_types = ['Object', 'Fruits and Vegetables',
+  'Milk and Alternatives', 'Meat and Alternatives',
+  'Grains']
+%>
+
 %if form:
   <script type="text/javascript">
   %if form.get("ERROR_IN_ADD"):
@@ -275,6 +281,7 @@
                         <select name="category_type" class="span2">
                           % if category_types:
                             % for category in category_types:
+                              ${need.item.category_type}
                                <option value="${category}"
                                %if need.item.category_type == category :
                                 selected="selected"
