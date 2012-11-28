@@ -98,14 +98,14 @@ category_types = ['Object', 'Fruits and Vegetables',
       <div class="control-group">
         <div class="controls">
           <label class="checkbox inline">
-            <input type="checkbox" name="is_refrigerated"
-                % if form.is_refrigerated == 1:
+            <input type="checkbox" name="is_perishable"
+                % if form.is_perishable == 1:
                   checked="yes"
                 % endif
               > Perishable?
           </label>
           <label class="checkbox inline">
-              <input type="checkbox" name="is_perishable"
+              <input type="checkbox" name="is_refrigerated"
                 % if form.is_refrigerated == 1:
                   checked="yes"
                 % endif
