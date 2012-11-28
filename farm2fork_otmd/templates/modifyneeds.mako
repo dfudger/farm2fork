@@ -105,7 +105,7 @@ category_types = ['Object', 'Fruits and Vegetables',
               > Perishable?
           </label>
           <label class="checkbox inline">
-              <input type="checkbox" name="is_refrigerated"
+              <input type="checkbox" name="is_perishable"
                 % if form.is_refrigerated == 1:
                   checked="yes"
                 % endif
