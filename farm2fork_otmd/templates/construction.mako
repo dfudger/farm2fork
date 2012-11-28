@@ -16,7 +16,7 @@
 
     <div class="span4">
         <p>
-            <img src="/static/img/construction.jpg" alt="Farm2Fork logo">
+            <img src="/static/img/construction.jpg" alt="Man carrying lots food drive donations.">
         </p>
     </div>
 </div>
